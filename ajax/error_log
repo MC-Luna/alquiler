@@ -1,0 +1,640 @@
+[17-Mar-2026 12:08:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 12:08:05 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 13:25:36 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 13:25:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 13:25:44 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[17-Mar-2026 13:25:44 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[17-Mar-2026 13:25:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 13:25:44 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  codigo_sede in (4,1) order by razon_social
+[17-Mar-2026 13:25:44 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[17-Mar-2026 15:04:16 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:04:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:04:32 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:04:32 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:04:33 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:05:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:05:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:06:34 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:06:34 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:06:34 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:07:42 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:07:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:07:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:08:04 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:08:04 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:08:04 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:08:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:08:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:08:43 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:08:43 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:08:44 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:09:22 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:09:23 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:09:45 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:10:01 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:11:06 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:11:07 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:11:37 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:11:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:11:37 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:11:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:11:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:11:51 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:11:51 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:11:52 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:12:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:12:33 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:15:26 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:15:28 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:16:19 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:16:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:16:19 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:16:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:16:22 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:17:02 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:17:02 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:17:02 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:17:02 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:17:04 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:17:46 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:17:46 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:17:46 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:17:46 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:17:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:19:24 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:19:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:19:52 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:19:52 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:19:52 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:19:52 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:19:54 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:21:04 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:21:05 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:21:37 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:21:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:21:37 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:21:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:21:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:22:30 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:22:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:23:13 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:23:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:23:13 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:23:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:23:16 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:24:23 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:24:24 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:25:10 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:25:11 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:25:57 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:25:57 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:25:57 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:25:57 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:25:58 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:28:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:28:34 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:29:21 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:29:21 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:29:21 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:29:21 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:29:23 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:35:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1 
+[17-Mar-2026 15:35:03 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:35:03 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:38:28 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:38:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:39:04 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:39:04 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:39:04 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:39:04 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:39:06 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:40:12 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:40:13 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:40:45 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:40:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:40:45 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:40:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:40:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:40:57 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:40:57 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 15:40:57 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 15:41:28 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:41:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:41:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:41:46 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:44:06 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:44:08 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:44:25 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 15:44:40 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:44:40 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:44:40 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:44:40 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:44:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:45:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:45:20 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:45:54 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:45:54 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:45:54 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:45:54 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:45:57 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:46:33 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:46:35 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:47:11 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:47:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:47:11 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:47:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:47:13 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:48:06 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:48:08 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:48:37 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:48:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:48:37 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:48:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:48:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:50:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:50:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:51:43 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:51:43 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:51:43 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:51:43 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:51:46 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:52:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:52:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:53:35 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:53:35 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:53:35 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:53:35 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:53:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:55:00 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:55:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:55:38 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:55:38 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:55:38 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:55:38 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:55:41 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:56:19 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:56:20 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:57:03 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:57:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:57:03 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:57:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:57:06 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:59:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:59:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 15:59:45 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 15:59:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 15:59:45 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 15:59:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 15:59:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:00:26 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:00:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:01:03 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:01:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:01:03 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:01:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:01:05 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:01:13 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:01:15 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:01:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:01:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:02:32 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:02:32 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:02:32 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:02:32 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:02:34 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:04:19 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:04:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:04:46 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:04:46 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:04:46 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:04:46 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:04:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:05:25 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:05:25 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:05:25 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:05:25 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:05:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:06:56 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:06:56 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:06:56 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:06:56 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:06:58 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:08:12 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:08:14 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:08:42 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:08:42 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:08:42 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:08:42 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:08:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:09:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:09:20 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:09:50 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:09:50 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:09:50 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:09:50 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:09:52 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:10:30 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:10:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:11:20 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:11:20 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:11:20 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:11:20 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:11:22 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:11:44 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:11:45 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 16:11:45 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 16:12:23 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:12:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:17:41 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:17:42 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:18:21 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:18:21 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:18:21 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:18:21 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:18:24 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:19:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:19:04 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:19:31 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:19:31 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:19:31 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:19:31 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:19:33 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:20:13 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:20:14 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:20:46 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:20:46 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:20:46 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:20:47 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:20:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:21:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:21:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:22:02 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:22:02 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:22:02 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:22:02 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:22:04 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:22:41 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:22:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:22:50 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:22:51 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:23:23 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:23:23 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:23:23 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:23:23 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:23:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:24:42 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:24:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:25:11 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:25:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:25:11 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:25:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:25:14 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:26:34 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:31:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:31:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:33:14 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:33:14 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:33:14 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:33:14 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:33:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:35:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:35:41 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:36:47 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:36:47 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:36:47 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:36:47 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:36:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:45:33 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:46:00 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:46:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:46:26 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[17-Mar-2026 16:46:26 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[17-Mar-2026 16:46:26 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=4
+[17-Mar-2026 16:46:27 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[17-Mar-2026 16:46:27 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[17-Mar-2026 16:47:34 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:47:34 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 16:47:35 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 16:48:41 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:50:37 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:51:39 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:54:13 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:54:13 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 16:54:14 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 16:54:19 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes WHERE  inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad
+[17-Mar-2026 16:55:18 America/Bogota] select codigo_rol, nombre from tbl_roles WHERE 1
+[17-Mar-2026 16:55:18 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 16:55:54 America/Bogota] select codigo_contrato, concat(tbl_contratos.codigo_contrato,' > ',tbl_clientes.nombres,' ',tbl_clientes.apellidos, ' > ', tbl_motos.placa) from tbl_contratos inner join tbl_clientes on tbl_clientes.codigo_cliente = tbl_contratos.codigo_cliente inner join tbl_motos on tbl_motos.codigo_moto = tbl_contratos.codigo_moto WHERE 1
+[17-Mar-2026 16:55:54 America/Bogota] select codigo_cobro_concepto, descripcion from tbl_cobro_conceptos WHERE  1
+[17-Mar-2026 16:55:54 America/Bogota] select codigo_estado, descripcion from tbl_cartera_estados WHERE  1
+[17-Mar-2026 16:56:56 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:56:58 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:57:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:57:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:58:18 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 16:58:18 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 16:58:18 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 16:58:18 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 16:58:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:58:57 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[17-Mar-2026 16:58:58 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[17-Mar-2026 16:58:58 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=4
+[17-Mar-2026 16:58:58 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[17-Mar-2026 16:58:58 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[17-Mar-2026 16:59:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 16:59:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:00:11 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 17:00:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 17:00:11 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 17:00:11 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 17:00:14 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:00:45 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 17:00:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 17:00:45 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 17:00:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 17:00:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:02:51 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:03:30 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:03:31 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[17-Mar-2026 17:03:31 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[17-Mar-2026 17:04:51 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:04:53 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:05:38 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1 
+[17-Mar-2026 17:05:38 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:05:38 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:06:24 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:06:24 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[17-Mar-2026 17:06:24 America/Bogota] select codigo_concepto, descripcion from tbl_caja_menor_conceptos WHERE tipo='out' order by descripcion
+[17-Mar-2026 17:06:43 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:06:43 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:06:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1
+[17-Mar-2026 17:07:09 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:07:09 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[17-Mar-2026 17:07:09 America/Bogota] select codigo_concepto, descripcion from tbl_movimiento_conceptos WHERE  1 order by descripcion
+[17-Mar-2026 17:07:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1
+[17-Mar-2026 17:07:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1
+[17-Mar-2026 17:07:35 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[17-Mar-2026 17:07:35 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[17-Mar-2026 17:07:35 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[17-Mar-2026 17:07:35 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[17-Mar-2026 17:07:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[17-Mar-2026 17:08:40 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[17-Mar-2026 17:08:40 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[17-Mar-2026 17:08:40 America/Bogota] select codigo_concepto, descripcion from tbl_movimiento_conceptos WHERE  1 order by descripcion
+[17-Mar-2026 17:08:48 America/Bogota] select consulta, nombre from tbl_exportar WHERE  1
+[17-Mar-2026 17:09:22 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  1
+[18-Mar-2026 06:25:28 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 08:20:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:20:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:41:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:41:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:42:00 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:42:00 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:42:00 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:42:00 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:42:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:46:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:46:19 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:46:44 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:46:44 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:46:44 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:46:44 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:46:46 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:47:19 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:47:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:47:19 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:47:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:47:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:47:58 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:47:59 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:48:25 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:48:25 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:48:25 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:48:25 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:48:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:50:13 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:50:14 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:51:48 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:51:48 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:51:48 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:51:48 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:51:50 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:53:09 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:53:10 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:53:41 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:53:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:53:41 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:53:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:53:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:54:33 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:54:34 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 08:55:30 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 08:55:30 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 08:55:30 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 08:55:30 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 08:55:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:01:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:01:50 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:02:09 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:02:21 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes in[18-Mar-2026 09:27:52 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:27:53 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:28:29 America/Bogota] select codigo_cliente, UPPER(CONCAT(COALESCE(nombres),' ',COALESCE(apellidos), ' - ', tipo_documento, ' ', identificacion))  from tbl_clientes WHERE  proceso_leads != 1 ORDER BY 2 
+[18-Mar-2026 09:28:29 America/Bogota] select codigo_cobro_concepto, descripcion from tbl_cobro_conceptos WHERE  1
+[18-Mar-2026 09:28:36 America/Bogota] select c.codigo_contrato, concat(c.codigo_contrato,' ► ', m.placa,'-',m.linea ) from tbl_contratos c inner join tbl_motos m on c.codigo_moto = m.codigo_moto WHERE codigo_cliente=7494 and c.activo=1
+[18-Mar-2026 09:28:40 America/Bogota] select c.codigo_contrato, concat(c.codigo_contrato,' ► ', m.placa,'-',m.linea ) from tbl_contratos c inner join tbl_motos m on c.codigo_moto = m.codigo_moto WHERE codigo_cliente=8172 and c.activo=1
+[18-Mar-2026 09:29:08 America/Bogota] select codigo_cliente, UPPER(CONCAT(COALESCE(nombres),' ',COALESCE(apellidos), ' - ', tipo_documento, ' ', identificacion))  from tbl_clientes WHERE  proceso_leads != 1 ORDER BY 2 
+[18-Mar-2026 09:29:08 America/Bogota] select codigo_cobro_concepto, descripcion from tbl_cobro_conceptos WHERE  1
+[18-Mar-2026 09:29:12 America/Bogota] select c.codigo_contrato, concat(c.codigo_contrato,' ► ', m.placa,'-',m.linea ) from tbl_contratos c inner join tbl_motos m on c.codigo_moto = m.codigo_moto WHERE codigo_cliente=8172 and c.activo=1
+[18-Mar-2026 09:29:29 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:29:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:32:27 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:32:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:32:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:33:41 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:33:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:33:41 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:33:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:33:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:33:46 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:33:46 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  codigo_sede=1
+[18-Mar-2026 09:34:18 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[18-Mar-2026 09:34:18 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[18-Mar-2026 09:34:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:34:18 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  codigo_sede in (4,1) order by razon_social
+[18-Mar-2026 09:34:19 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[18-Mar-2026 09:34:39 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:34:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  codigo_sede=1
+[18-Mar-2026 09:34:41 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  codigo_sede in (4,1) order by razon_social
+[18-Mar-2026 09:34:41 America/Bogota] select codigo_concepto, descripcion from tbl_movimiento_conceptos WHERE  1 order by descripcion
+[18-Mar-2026 09:34:54 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:34:54 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[18-Mar-2026 09:34:55 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[18-Mar-2026 09:36:02 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[18-Mar-2026 09:36:02 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[18-Mar-2026 09:36:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:36:02 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  1 order by razon_social
+[18-Mar-2026 09:36:02 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[18-Mar-2026 09:36:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:36:19 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:36:21 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:36:21 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  codigo_sede=1
+[18-Mar-2026 09:36:28 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[18-Mar-2026 09:36:28 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[18-Mar-2026 09:36:28 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:36:28 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  codigo_sede in (4,1) order by razon_social
+[18-Mar-2026 09:36:29 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[18-Mar-2026 09:36:31 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:36:32 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[18-Mar-2026 09:37:43 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:37:46 America/Bogota] select codigo_estado, descripcion from tbl_moto_estados WHERE 1
+[18-Mar-2026 09:37:47 America/Bogota] select codigo_concepto, descripcion from tbl_mantenimiento_moto_conceptos WHERE 1
+[18-Mar-2026 09:37:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:37:47 America/Bogota] select codigo_proveedor, razon_social from tbl_proveedores WHERE  codigo_sede in (4,1) order by razon_social
+[18-Mar-2026 09:37:47 America/Bogota] select codigo_ciudad, CONCAT(codigo_departamento,' > ',nombre) from tbl_ciudades WHERE  codigo_pais='COL' order by codigo_departamento 
+[18-Mar-2026 09:37:49 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:37:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  codigo_sede=1
+[18-Mar-2026 09:38:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:38:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:39:11 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:39:12 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:40:13 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:40:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:40:13 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:40:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:40:15 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:40:42 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:40:44 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:41:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:42:02 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:42:04 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:42:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:42:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:42:41 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:42:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:42:41 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:42:41 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:42:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:43:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:43:41 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:43:43 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:43:43 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:43:43 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:43:43 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:43:46 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:44:37 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:44:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:44:37 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:44:37 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:44:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:44:48 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:44:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:45:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:45:49 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:45:56 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:46:10 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:47:07 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:47:09 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:47:45 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:47:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:47:45 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:47:45 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:47:47 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:48:38 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:48:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:49:16 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:49:16 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:49:16 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:49:16 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:49:20 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:49:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:49:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:49:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:50:52 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:50:55 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:51:30 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:51:30 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:51:30 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:51:30 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:51:33 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:52:32 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:52:34 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:53:18 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:53:18 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:53:18 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:53:18 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:53:27 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:54:01 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:54:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:54:13 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:54:13 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[18-Mar-2026 09:54:13 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[18-Mar-2026 09:54:30 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:54:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:54:50 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:54:53 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:55:10 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:55:10 America/Bogota] select codigo_cliente, concat(nombres,'  ',apellidos) from tbl_clientes WHERE 1 ORDER BY nombres
+[18-Mar-2026 09:55:11 America/Bogota] select codigo_tipo_contrato, descripcion from tbl_contrato_tipos WHERE  1 
+[18-Mar-2026 09:55:32 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:55:32 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:55:32 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:55:33 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:55:39 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:55:40 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:56:00 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:56:10 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:56:12 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:56:12 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  codigo_sede=1
+[18-Mar-2026 09:56:18 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:56:19 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=1
+[18-Mar-2026 09:56:22 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 09:57:43 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:57:45 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 09:59:05 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 09:59:05 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 09:59:05 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 09:59:05 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 09:59:07 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:01:08 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:01:10 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:01:48 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:01:48 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:01:48 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:01:48 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:01:57 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:03:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:03:20 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:03:58 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:03:58 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:03:58 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:03:58 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:04:03 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:05:24 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:05:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:06:13 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:06:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:06:13 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:06:13 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:06:17 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:07:36 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:07:37 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:08:19 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:08:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:08:19 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:08:19 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:08:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:08:52 America/Bogota] select codigo_sede, concat(tbl_ciudades.codigo_pais,' > ',tbl_ciudades.codigo_departamento, ' > ', tbl_ciudades.nombre, ' > ', tbl_sedes.nombre) from tbl_sedes inner join tbl_ciudades on tbl_ciudades.codigo_ciudad = tbl_sedes.codigo_ciudad WHERE 1
+[18-Mar-2026 10:09:30 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:09:31 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:10:07 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:10:07 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:10:07 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:10:07 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:10:09 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:11:23 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:11:25 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3
+[18-Mar-2026 10:12:03 America/Bogota] PHP Warning:  Illegal string offset 'fechafin' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 161
+[18-Mar-2026 10:12:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoAnterior' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 191
+[18-Mar-2026 10:12:03 America/Bogota] PHP Warning:  Illegal string offset 'pagorealizadociclo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 212
+[18-Mar-2026 10:12:03 America/Bogota] PHP Warning:  Illegal string offset 'positivoNuevo' in /home2/zaguez01/app.mototrabajo.com/ajax/pago_contrato.php on line 290
+[18-Mar-2026 10:12:07 America/Bogota] select codigo_cuenta, descripcion from tbl_movimiento_cuentas WHERE  transversal=1 or codigo_sede=3

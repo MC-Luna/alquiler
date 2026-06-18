@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Mototrabajo</title>
+
+<style type="text/css">
+body {
+width:750px;
+margin:0 auto;
+margin-top:30px;
+}
+
+
+.texto{
+	font-style: normal/italic/oblique;
+	font-size: 12px;
+}
+
+/* ----- HEADER ----- */
+#header {
+width:750px;
+height:160px;
+background-color:#fff;
+}
+/* ----- MAIN CONTENT ----- */
+#content { 
+width:750px;
+background-color:#fff;
+margin-top:10px;
+min-height:500px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:500px; /* for IE5.x and IE6 */
+}
+/* ----- FOOTER ----- */
+
+#footer { 
+width:750px;
+height:100px;
+background-color:#fff;
+margin-top:10px;
+}
+
+td {
+    padding: 10px 10px;
+    background: #00000017;
+    text-align: center;
+   
+}
+</style>
+
+<body style="background: #f5f5f7; width: 100%">
+
+<div style="width: 800px">
+	<center>
+		<img  style="zoom: 35%;mix-blend-mode: difference;" src="https://zaguez.com/wp-content/uploads/2021/09/logo-zaguez.png">
+		</center>
+
+<div>
+<p style="    font-family: montserrat;    color: #7d7d7d;    font-weight: 500;text-align: justify;">
+Se le informa, {destinatario}, se ha <b>descongelado</b> el siguiente contrato:
+</p>
+</div >
+
+<table style="width: 100%;">
+	<tr>
+		<td> Contrato Nro. </td>
+		<td> {codigo_contrato}</td>
+	</tr>
+	<tr>
+		<td> Fecha Próximo Cobro</td>
+		<td>{fecha_proximo_cobro}</td>
+	</tr>
+	<tr>
+		<td> Asesor </td>
+		<td> {usuario} </td>
+	</tr>
+	<tr>
+		<td> Cliente</td>
+		<td>{cliente}</td>
+	</tr>
+	<tr>
+		<td> Moto</td>
+		<td>{moto}</td>
+	</tr>
+	<tr>
+		<td> Motivo</td>
+		<td>{motivo}</td>
+	</tr>
+	<tr>
+		<td> Duración del congelamiento</td>
+		<td>{dias} días</td>
+	</tr>
+	<tr>
+		<td> Periodo</td> 
+		<td>{fecha_inicio} - {fecha_cierre} </td>
+	</tr>
+
+</table>
+
+
+</div>
+</body>
+</html>
