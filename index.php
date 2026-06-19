@@ -31,7 +31,6 @@ session_start();
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 
 <style>
   
@@ -360,6 +359,19 @@ session_start();
 
   <script src="js/sb-admin-2.min.js"></script>
   <script src="js/jquery.doubleScroll.js"></script>
+
+  <!-- FullCalendar -->
+  <link href="config/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+  <link href="config/fullcalendar/fullcalendar.print.min.css" rel="stylesheet" media="print">
+  <script src="config/fullcalendar/moment.min.js"></script>
+  <script src="config/fullcalendar/fullcalendar.min.js"></script>
+  <script src="config/fullcalendar/es.js"></script>
+  <script src="config/fullcalendar/popper.min.js"></script>
+
+  <!-- Tabs -->
+  <link href="config/tabs/component.css" rel="stylesheet">
+  <script src="config/tabs/cbpFWTabs.js"></script>
+
   <script src="js/mototrabajo.js?2710430"></script>
   <script src="js/formApp.js?2710456"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

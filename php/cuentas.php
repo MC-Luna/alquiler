@@ -2,18 +2,18 @@
 
 	require(dirname(__DIR__)."/conexion/conexion.php");
 
-	$GLOBALS = array(
+	$db_cuentas = array(
 		'conexion' => new conexion_db()
 	);
-	
+
 	class usuarios {
-		
+
 		protected $conexion;
-		
+
 		public function __construct() {
-			
-			global $GLOBALS;
-        	$this->conexion =& $GLOBALS;
+
+			global $db_cuentas;
+        	$this->conexion =& $db_cuentas;
     	}
 		
 		public function login($email,$pass){

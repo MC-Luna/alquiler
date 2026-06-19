@@ -17,5 +17,8 @@ desktop.ini
 # Archivos de servidor FTP
 .ftpquota
 
+# Dumps de base de datos
+*.sql
+
 # Logs
 *.log

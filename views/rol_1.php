@@ -1,15 +1,5 @@
 
 
-  <!--  FULLCALENDAR 		-->
-  <link href='/config/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
-<link href='/config/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-<script src='/config/fullcalendar/moment.min.js'></script>
-<script src='/config/fullcalendar/fullcalendar.min.js'></script>
-<script src='/config/fullcalendar/es.js'></script>
-<script src='/config/fullcalendar/popper.min.js'></script>
-
-<link href='/config/tabs/component.css' rel='stylesheet' />
-<script src="/config/tabs/cbpFWTabs.js"></script>
 
 
 <style>

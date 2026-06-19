@@ -2,18 +2,18 @@
 
 include_once(dirname(__DIR__)."/conexion/conexion.php");
 
-	$GLOBALS = array(
+	$db_notificaciones = array(
 		'conexion' => new conexion_db()
 	);
-	
+
 	class notificaciones {
-		
+
 		protected $conexion;
-		
+
 		public function __construct() {
-			
-			global $GLOBALS;
-        	$this->conexion =& $GLOBALS;
+
+			global $db_notificaciones;
+        	$this->conexion =& $db_notificaciones;
     	}
 		
 		public function consulta($email, $nombre_consulta, $filtro){

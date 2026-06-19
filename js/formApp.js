@@ -1,4 +1,3 @@
-const { data } = require("jquery");
 
 //Formulario de mantenmiento insertar
 function mostrarModalEditar(e,tipoModulo){

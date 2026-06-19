@@ -2,18 +2,18 @@
 
 	require(dirname(__DIR__)."/conexion/conexion.php");
 
-	$GLOBALS = array(
+	$db_usuarios = array(
 		'conexion' => new conexion_db()
 	);
-	
+
 	class usuarios {
-		
+
 		protected $conexion;
-		
+
 		public function __construct() {
-			
-			global $GLOBALS;
-        	$this->conexion =& $GLOBALS;
+
+			global $db_usuarios;
+        	$this->conexion =& $db_usuarios;
     	}
 		
 		public function login($email,$pass){
@@ -23,16 +23,18 @@
 				
 				//$pass =md5("PMOTO".trim($pass));
 				
-				$query = " SELECT 
+				$pass = md5(trim($pass));
+
+				$query = " SELECT
 				s.codigo_usuario,
 				s.identificacion,
 				s.codigo_rol,
 				s.codigo_sede,
 				s.email
-				
+
 				FROM tbl_usuarios s
 
-				where s.identificacion = '$pass' and s.email = '$email' and s.activo=1";
+				where s.pass = '$pass' and s.email = '$email' and s.activo=1";
 
 				$resultado=$con->ejecutar_sql($query);
 

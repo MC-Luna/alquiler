@@ -6,10 +6,8 @@
 
 
 
-	$GLOBALS = array(
-
+	$db_registros = array(
 		'conexion' => new conexion_db()
-
 	);
 
 	
@@ -26,9 +24,9 @@
 
 			
 
-			global $GLOBALS;
+			global $db_registros;
 
-        	$this->conexion =& $GLOBALS;
+        	$this->conexion =& $db_registros;
 
     	}
 
