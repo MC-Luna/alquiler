@@ -32,15 +32,6 @@
     }
     #div-exito { display: none; }
     #div-enviando { display: none; }
-    .fuente-badge {
-      background: #e8f4ff;
-      border: 1px solid #b8daff;
-      color: #004085;
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      display: inline-block;
-    }
   </style>
 </head>
 <body>
@@ -162,8 +153,9 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text">Ciudad</span>
                     </div>
-                    <input type="text" class="form-control" name="expedida" id="ciudad"
-                      placeholder="Ej: Bogotá" required>
+                    <select class="form-control" name="expedida" id="ciudades_leads" required>
+                      <option value="">Cargando...</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-sm-7 mt-2 mt-sm-0">
@@ -177,18 +169,8 @@
                 </div>
               </div>
 
-              <!-- Fuente (oculta, pre-llenada) -->
-              <div class="form-row mb-3">
-                <div class="col-sm-5">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Fuente</span>
-                    </div>
-                    <input type="text" class="form-control" value="-Web-" readonly style="background:#f8f9fa; color:#6c757d;">
-                    <input type="hidden" name="fuente_leads" value="web">
-                  </div>
-                </div>
-              </div>
+              <!-- Fuente oculta -->
+              <input type="hidden" name="fuente_leads" value="web">
 
               <!-- Campos ocultos requeridos por la DB -->
               <input type="hidden" name="proceso_leads" value="1">
@@ -220,8 +202,11 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/mototrabajo.js"></script>
 <script>
 $(document).ready(function(){
+
+  rellenar_select("tbl_ciudades","nombre","concat(codigo_pais,' > ', nombre)","codigo_pais='COL'","ciudades_leads");
 
   $('#form_postulacion').on('submit', function(e){
     e.preventDefault();
@@ -231,7 +216,7 @@ $(document).ready(function(){
     var nombres  = $('#nombres').val().trim();
     var apellidos= $('#apellidos').val().trim();
     var celular  = $('#celular').val().trim();
-    var ciudad   = $('#ciudad').val().trim();
+    var ciudad   = $('#ciudades_leads').val();
 
     if(!tipo || tipo === ''){
       mostrarError('Selecciona el tipo de documento.'); return;
@@ -248,8 +233,8 @@ $(document).ready(function(){
     if(!celular){
       mostrarError('Ingresa el número de celular.'); return;
     }
-    if(!ciudad){
-      mostrarError('Ingresa la ciudad.'); return;
+    if(!ciudad || ciudad === '0'){
+      mostrarError('Selecciona la ciudad.'); return;
     }
 
     $('#div-error').hide();
