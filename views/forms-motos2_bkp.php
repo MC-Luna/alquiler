@@ -1,4 +1,4 @@
-<link href='/config/tabs/component.css' rel='stylesheet' />
+﻿<link href='/app/config/tabs/component.css' rel='stylesheet' />
 
 
 

@@ -1,4 +1,4 @@
-<link href='/config/tabs/component.css' rel='stylesheet' />
+﻿<link href='/app/config/tabs/component.css' rel='stylesheet' />
 
 
 	<!-- https://tympanus.net/codrops/2014/03/21/responsive-full-width-tabs/comment-page-3/ -->

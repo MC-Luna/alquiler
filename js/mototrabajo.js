@@ -186,7 +186,7 @@ function eliminarPago(id){
 
   if(confirm("Seguro que desea eliminar este pago?")){
 
-      let url="/ajax/infomodal_WEBSERVICE.php";
+      let url="/app/ajax/infomodal_WEBSERVICE.php";
 
       let data=new FormData();
       data.append('IDPAGO', id);
@@ -241,7 +241,11 @@ function llenar_formulario(formulario, tabla, filtro){
           campo=document.forms[formulario].elements[i].name;        
           $.each(data, function (key, value) {
             if (key==campo){
-              document.forms[formulario].elements[i].value=value;
+              if (document.forms[formulario].elements[i].type === 'date' && (value === '0000-00-00' || value === null)) {
+                document.forms[formulario].elements[i].value = '';
+              } else {
+                document.forms[formulario].elements[i].value=value;
+              }
             }
           });
         }

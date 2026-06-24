@@ -1,4 +1,4 @@
-  
+﻿  
 
   <!--  FULLCALENDAR 		-->
 <link href='/config/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
@@ -8,7 +8,7 @@
 <script src='/config/fullcalendar/es.js'></script>
 <script src='/config/fullcalendar/popper.min.js'></script>
 
-<link href='/config/tabs/component.css' rel='stylesheet' />
+<link href='/app/config/tabs/component.css' rel='stylesheet' />
 <script src="/config/tabs/cbpFWTabs.js"></script>
 
 

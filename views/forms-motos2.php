@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 session_start();
 ?>
-<link href='/config/tabs/component.css' rel='stylesheet' />
+<link href='/app/config/tabs/component.css' rel='stylesheet' />
 
 <style>
 	.tabs nav ul li {

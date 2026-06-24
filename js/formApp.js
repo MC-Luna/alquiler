@@ -4,7 +4,7 @@ function mostrarModalEditar(e,tipoModulo){
             
     console.log("tipomodulo", tipoModulo);
     
-    let url="/ajax/infomodal_WEBSERVICE.php";
+    let url="/app/ajax/infomodal_WEBSERVICE.php";
     let data=new FormData();
     let arrDato=[];
 
@@ -157,7 +157,7 @@ function mostrarModalEditar(e,tipoModulo){
 function mostrarModalEditar2(e,tipoModulo){
     console.log("tipomodulo", tipoModulo);
     
-    let url="/ajax/infomodal_WEBSERVICE.php";
+    let url="/app/ajax/infomodal_WEBSERVICE.php";
     let data=new FormData();
     let arrDato=[];
 
@@ -494,7 +494,7 @@ function funcionSave(e){
     }
 
     //En el botton que llama la function meto los datos en elementos data de html.
-    let url="/ajax/infomodal_WEBSERVICE.php";
+    let url="/app/ajax/infomodal_WEBSERVICE.php";
     let nombreTabla=[];
     let tipoConsulta=[];
     let nameFormulario="";
@@ -715,7 +715,7 @@ function changeFase(datos){
 
 function EnvioAjax(datos, vista){
 
-    let url="/ajax/infomodal_WEBSERVICE.php";
+    let url="/app/ajax/infomodal_WEBSERVICE.php";
 
     fetch(url,{
         method:'POST',

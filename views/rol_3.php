@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 ?>
 <!--  FULLCALENDAR 		-->
@@ -8,7 +8,7 @@ session_start();
 <script src='/config/fullcalendar/fullcalendar.min.js'></script>
 <script src='/config/fullcalendar/es.js'></script>
 <script src='/config/fullcalendar/popper.min.js'></script>
-<link href='/config/tabs/component.css' rel='stylesheet' />
+<link href='/app/config/tabs/component.css' rel='stylesheet' />
 <script src="/config/tabs/cbpFWTabs.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.2/xlsx.full.min.js"></script>
