@@ -223,11 +223,10 @@ session_start();
 
        
         if($tabla=="tbl_motos"){
-            $where="codigo_moto=".$_POST['codigo_moto'];
+            $where="codigo_moto=".($_POST['codigo_moto'] ?? 0);
         }else{
-            $where="codigo_cliente=".$_POST['codigo_cliente'];
-            $codigo_cliente=$_POST['codigo_cliente'];
-
+            $where = isset($_POST['codigo_cliente']) ? "codigo_cliente=".$_POST['codigo_cliente'] : "1=1";
+            $codigo_cliente = $_POST['codigo_cliente'] ?? null;
         }
 
         /*Cuando este haciendo un cambio en la tabla seguridad tengo que validar si hare un update o un insert
