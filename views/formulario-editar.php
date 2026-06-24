@@ -6388,7 +6388,7 @@
 
 
 
-<script src="/config/tabs/cbpFWTabs.js"></script>
+<script src="/app/config/tabs/cbpFWTabs.js"></script>
 
 
 

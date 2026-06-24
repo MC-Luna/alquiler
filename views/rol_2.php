@@ -9,7 +9,7 @@
 <script src='/config/fullcalendar/popper.min.js'></script>
 
 <link href='/app/config/tabs/component.css' rel='stylesheet' />
-<script src="/config/tabs/cbpFWTabs.js"></script>
+<script src="/app/config/tabs/cbpFWTabs.js"></script>
 
 <style>
     .fc-event{

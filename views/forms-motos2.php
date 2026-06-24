@@ -397,7 +397,7 @@ session_start();
 
 </div>
 
-<script src="/config/tabs/cbpFWTabs.js"></script>
+<script src="/app/config/tabs/cbpFWTabs.js"></script>
 <script>
 	new CBPFWTabs( document.getElementById( 'tabsm' ) );
 </script>

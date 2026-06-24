@@ -9,7 +9,7 @@ session_start();
 <script src='/config/fullcalendar/es.js'></script>
 <script src='/config/fullcalendar/popper.min.js'></script>
 <link href='/app/config/tabs/component.css' rel='stylesheet' />
-<script src="/config/tabs/cbpFWTabs.js"></script>
+<script src="/app/config/tabs/cbpFWTabs.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.2/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
