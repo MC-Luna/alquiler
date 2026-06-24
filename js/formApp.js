@@ -589,7 +589,11 @@ function funcionSave(e){
     }).then(response => response.json())
     .then(data => {
         console.log("REPUESTAGUARDADOFORM", data);
-        alert(data.info);
+        if(data && data.error_php){
+            alert("Error al guardar: " + data.error_php);
+        } else {
+            alert(data ? data.info : "Sin respuesta");
+        }
         cargar_view(`views/${vista}.php`);
         
 
