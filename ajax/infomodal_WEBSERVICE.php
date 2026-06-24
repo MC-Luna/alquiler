@@ -293,9 +293,13 @@ session_start();
             
         }else{
             if($tabla == "leads_clientes"){
-//echo "6";  
-                $fuente=$_POST['fuente_leads'];
+//echo "6";
+                $fuente=$_POST['fuente_leads'] ?? 0;
                 unset($_POST['fuente_leads']);
+                // Valores por defecto para campos NOT NULL sin default en tbl_clientes
+                if (!isset($_POST['codigo_origen_lead']) || $_POST['codigo_origen_lead'] === '') $_POST['codigo_origen_lead'] = 0;
+                if (!isset($_POST['activo']) || $_POST['activo'] === '') $_POST['activo'] = 1;
+                if (!isset($_POST['proceso_leads']) || $_POST['proceso_leads'] === '') $_POST['proceso_leads'] = 0;
                 $res=$conexion->insertar('tbl_clientes', $_POST);
 
 
