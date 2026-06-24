@@ -20,7 +20,7 @@ jobs:
           server: ftp.pruebagencia.online
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/app/
+          server-dir: public_html/app/
           state-name: .ftp-deploy-sync-v2
           exclude: |
             **/.git*
