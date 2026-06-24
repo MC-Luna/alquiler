@@ -1,9 +1,15 @@
-<?php 
+<?php
 session_start();
+	set_error_handler(function($errno, $errstr, $errfile, $errline) {
+		http_response_code(200);
+		echo json_encode(['error_php' => "Error [$errno]: $errstr en $errfile linea $errline"]);
+		exit();
+	});
+	try {
     require(dirname(__DIR__)."/conexion/conexion.php");
     require(dirname(__DIR__)."/php/upload.php");
     $conexion=new conexion_db();
-    $GLOBALS['conexion'];
+    $GLOBALS['conexion'] = $conexion;
 
 
 //echo "<pre>";
@@ -419,6 +425,8 @@ session_start();
 
     }
 
-
-
+	} catch (Throwable $e) {
+		http_response_code(200);
+		echo json_encode(['error_php' => $e->getMessage()]);
+	}
 ?>
