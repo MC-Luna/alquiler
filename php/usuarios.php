@@ -40,8 +40,8 @@
 
 				if($resultado->num_rows == 1){
 					
-					$resultado=$resultado->fetch_all(MYSQLI_ASSOC);	
-					session_start();
+					$resultado=$resultado->fetch_all(MYSQLI_ASSOC);
+					if (session_status() == PHP_SESSION_NONE) session_start();
 					//INICIO LAS VARIABLES DE SESIONES
 					$_SESSION["codigo_rol"]=$resultado[0]["codigo_rol"];
 					$_SESSION["codigo_sede"]=$resultado[0]["codigo_sede"];
@@ -91,8 +91,8 @@
 
 				$txt.="Usuario ". $email. "<br>";
 				$txt.="      Contraseña: ". $clave_aleatoria;
-				$headers = "From: info@app.mototrabajo.com " . "\r\n" .
-				"CC: info@app.mototrabajo.com ";
+				$headers = "From: info@kairos.app " . "\r\n" .
+				"CC: info@kairos.app ";
 				
 				mail($email,$subject,$txt,$headers);
 				
@@ -131,8 +131,8 @@
 				$subject = "MotoTrabajo:  Cambio de Contraseña";
 				$txt ="Usuario: ". $email;
 				$txt .= "	Contraseña: ". $clave_aleatoria;
-				$headers = "From: info@app.mototrabajo.com " . "\r\n" .
-				"CC: info@app.mototrabajo.com ";
+				$headers = "From: info@kairos.app " . "\r\n" .
+				"CC: info@kairos.app ";
 				
 				mail($email,$subject,$txt,$headers);
 				

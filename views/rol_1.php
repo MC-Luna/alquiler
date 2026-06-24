@@ -380,16 +380,14 @@ $(document).on('click','#btn_guardar_numero_soporte', function(e){
 
 
     $(document).on('click','.pago', function(e){
-		//$( ".editar" ).on("click", function() {
             p_codigo_contrato_pago=$(this).data("codigo_contrato_pago");
             p_codigo_contrato=$(this).data("codigo_contrato");
-            url=$(this).data("url");
-            url="https://mototrabajo.com/soporte/"+url;
+            var dataUrl=$(this).data("url"); // formato: "{codigo_pago}.{nombre_archivo}"
+            // Extraer solo el nombre del archivo (todo lo que hay después del primer punto)
+            var archivo = dataUrl.substring(dataUrl.indexOf('.') + 1);
+            url="/archivos_cargados/registro_pago/" + archivo;
             open_w(url);
             $('#iframe_soporte').show();
-            /*
-        */
-
     });
 
 let idcede="";

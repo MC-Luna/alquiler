@@ -7,7 +7,7 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click','.link_pago', function(e){
-		var pass= "https://mototrabajo.com/zona-de-pagos/?t=" + $(this).data("tipo")+"&n=" + $(this).data("numero");
+		var pass= window.location.origin + "/pago_clientes.php";
 		copyToClipboard(pass);
 		$(this).css("opacity","0.3");
 	});
@@ -18,6 +18,15 @@ function cargar_view(formulario){
 	return false;
 }
 
+var iconosGrupo = {
+	'Operaciones'     : 'fa-tasks',
+	'Clientes & Ventas': 'fa-users',
+	'Flota'           : 'fa-motorcycle',
+	'Finanzas'        : 'fa-dollar-sign',
+	'Configuración'   : 'fa-cog',
+	'Reportes'        : 'fa-chart-bar'
+};
+
 function cargar_opciones(){
 	$.ajax({
 		type: 'POST',
@@ -26,8 +35,20 @@ function cargar_opciones(){
 		success: function(data){
 			if(data.resultado==1){
 				var html="";
-				$(data.opciones).each(function(){
-					html+="<a rel='"+$(this)[0].ruta+$(this)[0].formulario+"' data-nombre='"+$(this)[0].nombre+"' class='btn_opcion_menu collapse-item'>"+$(this)[0].nombre+"</a>";
+				$.each(data.grupos, function(grupo, items){
+					var id = "collapse_" + grupo.replace(/[^a-zA-Z0-9]/g,"_");
+					var icono = iconosGrupo[grupo] || 'fa-circle';
+					html += '<li class="nav-item">';
+					html += '<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#'+id+'" aria-expanded="false" aria-controls="'+id+'">';
+					html += '<i class="fas fa-fw '+icono+'"></i><span>'+grupo+'</span>';
+					html += '</a>';
+					html += '<div id="'+id+'" class="collapse" data-parent="#accordionSidebar">';
+					html += '<div class="bg-white py-2 collapse-inner rounded">';
+					html += '<h6 class="collapse-header">'+grupo+'</h6>';
+					$.each(items, function(i, item){
+						html += '<a class="collapse-item btn_opcion_menu" rel="'+item.ruta+item.formulario+'" href="#">'+item.nombre+'</a>';
+					});
+					html += '</div></div></li>';
 				});
 				$("#div_opciones_menu").html(html);
 			}
@@ -388,7 +409,8 @@ if((tecla == 8)||(tecla == 9)||(tecla == 32)||(tecla == 37)||(tecla == 39)||(tec
   return true;
 }
 var patron;
-patron = /[A-Z,a-z,Ã±,Ã‘]/
+patron = /[A-Z,a-z,Ã±,Ã’]/
 var te;
 te = String.fromCharCode(tecla);
 return patron.test(te);
+}

@@ -290,8 +290,8 @@ $(document).ready(function(){
             p_codigo_contrato_pago=$(this).data("codigo_contrato_pago");
             p_codigo_contrato=$(this).data("codigo_contrato");
             listado_consulta("div_listado_comprobante","comprobante_validar",p_codigo_contrato);
-            url=$(this).data("url");
-            url="https://mototrabajo.com/soporte/"+url; 
+            var _du=$(this).data("url");
+            url="/archivos_cargados/registro_pago/"+_du.substring(_du.indexOf('.')+1);
             $('[name="soporte"]').attr("src",url);
             ciclo=$(this).data("ciclo");
             $('#lbl_ciclo').html(ciclo);
@@ -411,11 +411,11 @@ $(document).ready(function(){
     $(document).on('click','.pago', function(e){
         p_codigo_contrato_pago=$(this).data("codigo_contrato_pago");
         p_codigo_contrato=$(this).data("codigo_contrato");
-        url=$(this).data("url");
-        url="https://mototrabajo.com/soporte/"+url; 
+        var _du=$(this).data("url");
+        url="/archivos_cargados/registro_pago/"+_du.substring(_du.indexOf('.')+1);
         open_w(url);
         $('#iframe_soporte').show();
- 
+
     });
 
     let idcede="";

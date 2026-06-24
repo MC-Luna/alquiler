@@ -134,7 +134,7 @@
 
 				$txt =" Se ha generado la sede ". $nuevo_registro;
 
-				$headers = "From: info@app.mototrabajo.com " . "\r\n" ."CC: info@app.mototrabajo.com ";
+				$headers = "From: info@kairos.app " . "\r\n" ."CC: info@kairos.app ";
 
 				mail($email,$subject,$txt,$headers);
 
@@ -312,7 +312,7 @@
 
 					$txt =" Se ha generado la sede ". $nuevo_registro;
 
-					$headers = "From: info@app.mototrabajo.com " . "\r\n" ."CC: info@app.mototrabajo.com ";
+					$headers = "From: info@kairos.app " . "\r\n" ."CC: info@kairos.app ";
 
 					
 

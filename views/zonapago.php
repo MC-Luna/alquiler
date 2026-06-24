@@ -169,7 +169,7 @@ echo $sql;
                 
     
     
-                echo '<form id="enviar-archivo" action="https://mototrabajo.com/zona-de-pagos/" class="elementor-form" method="post" enctype="multipart/form-data">
+                echo '<form id="enviar-archivo" action="/pago_clientes.php" class="elementor-form" method="post" enctype="multipart/form-data">
     
                     <div>
                      <b>Cliente : </b> '.  $vdata['Cliente'] .'<br>
@@ -202,7 +202,7 @@ echo $sql;
         }else{
 
                    // FORMULARIO DE CONSULTA
-        echo '<form class="elementor-form" method="get"  Action="https://mototrabajo.com/zona-de-pagos/" name="New Form">
+        echo '<form class="elementor-form" method="get"  Action="/pago_clientes.php" name="New Form">
                                    
                 <div class="elementor-form-fields-wrapper elementor-labels-above">
                    <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
@@ -401,7 +401,7 @@ echo "Este es el error ". $_FILES["archivo"]["error"];
             
 
 
-            echo '<form id="enviar-archivo" action="https://mototrabajo.com/zona-de-pagos/" class="elementor-form" method="post" enctype="multipart/form-data">
+            echo '<form id="enviar-archivo" action="/pago_clientes.php" class="elementor-form" method="post" enctype="multipart/form-data">
 
                 <div>
                  <b>Cliente : </b> '.  $row[2] .'<br>
@@ -426,7 +426,7 @@ echo "Este es el error ". $_FILES["archivo"]["error"];
         }else{
 
                    // FORMULARIO DE CONSULTA
-        echo '<form class="elementor-form" method="get"  Action="https://mototrabajo.com/zona-de-pagos/" name="New Form">
+        echo '<form class="elementor-form" method="get"  Action="/pago_clientes.php" name="New Form">
                                    
                 <div class="elementor-form-fields-wrapper elementor-labels-above">
                    <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">

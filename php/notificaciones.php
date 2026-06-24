@@ -52,7 +52,7 @@ include_once(dirname(__DIR__)."/conexion/conexion.php");
 					$asunto=$resultado[0]['asunto'];
 					$cabecera= 'MIME-Version: 1.0' . "\r\n";
 					$cabecera.= 'Content-type: text/html; charset=utf-8' . "\r\n";
-					$cabecera.= "From:Zaguez <info@mototrabajo.com> " . "\r\n" . "CC: info@mototrabajo.com ";
+					$cabecera.= "From:Zaguez <info@kairos.app> " . "\r\n" . "CC: info@kairos.app ";
 					
 					mail($email,$asunto,$contenido,$cabecera);
 					
@@ -82,7 +82,7 @@ include_once(dirname(__DIR__)."/conexion/conexion.php");
 	$cabecera.= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$cabecera.= "From: info@cotelcoatlantico.org";
 	$email= "ezamora@marketingdigitalideaz.com";
-	// . "\r\n" . "CC: info@mototrabajo.com ";
+	// . "\r\n" . "CC: info@kairos.app ";
 	mail($email,$asunto,$contenido,$cabecera);
 	*/
 ?>

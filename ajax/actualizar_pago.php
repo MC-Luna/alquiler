@@ -1,22 +1,11 @@
 <?php
-    // CONEXION CON BASE DE DATOS
-    $mysql_host="localhost";
-    $mysql_database="s19ff36e_kairos";
-    $mysql_user="s19ff36e_ukairos";
-    $mysql_password="Kairos2026#";
+    require(dirname(__DIR__)."/conexion/conexion.php");
+    $_con = new conexion_db();
+    $db = $_con->getConnection();
+    $GLOBALS["db"] = $db;
+
     $error="";
-    
-    $db = new mysqli($mysql_host, $mysql_user, $mysql_password, $mysql_database);
-    $GLOBALS["db"];
-
-    if($db->connect_errno > 0){
-        die('Error en la conexion de base de datos [' . $db->connect_error . ']');
-    }
-
-    $sql="SET time_zone = '-5:00'";
-    if(!$result= $db->query($sql)){
-        die('Error en consulta de time zone [' . $db->error . ']');
-    }    
+    $db->query("SET time_zone = '-5:00'");
 
 
     //Valido si el nro de soporte ya existe.
@@ -66,6 +55,14 @@
                     $valorTotal = $allData['datos'][0]['Valor'];
                     $fechaInicio = $allData['datos'][0]['Fecha Inicio'];
                     $fechaFin = $allData['datos'][0]['Fecha Fin'];
+
+                    // Si el pago fue creado sin monto (subida pública), usar valor_pagar del contrato
+                    if(empty($valorTotal) || $valorTotal == 0){
+                        $resValor = $GLOBALS['db']->query("SELECT valor_pagar FROM tbl_contratos WHERE codigo_contrato=".$_POST["codigo_contrato"]." LIMIT 1");
+                        if($resValor && $row = $resValor->fetch_assoc()){
+                            $valorTotal = $row['valor_pagar'];
+                        }
+                    }
                 
                 }
 

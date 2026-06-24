@@ -87,8 +87,8 @@
 
 				$txt.="Usuario ". $email. "<br>";
 				$txt.="      Contraseña: ". $clave_aleatoria;
-				$headers = "From: info@app.mototrabajo.com " . "\r\n" .
-				"CC: info@app.mototrabajo.com ";
+				$headers = "From: info@kairos.app " . "\r\n" .
+				"CC: info@kairos.app ";
 				
 				mail($email,$subject,$txt,$headers);
 				
@@ -127,8 +127,8 @@
 				$subject = "MotoTrabajo:  Cambio de Contraseña";
 				$txt ="Usuario: ". $email;
 				$txt .= "	Contraseña: ". $clave_aleatoria;
-				$headers = "From: info@app.mototrabajo.com " . "\r\n" .
-				"CC: info@app.mototrabajo.com ";
+				$headers = "From: info@kairos.app " . "\r\n" .
+				"CC: info@kairos.app ";
 				
 				mail($email,$subject,$txt,$headers);
 				
