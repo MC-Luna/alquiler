@@ -106,12 +106,17 @@ function rellenar_select(tabla,valor,etiqueta,filtro,id_select,seleccion){
     async:false,
     data:'tabla='+tabla+'&valor='+valor+'&etiqueta='+etiqueta+'&filtro='+filtro,
     success:function(dataInfo, status){
-      
+
       console.log("respuestaFunction",dataInfo);
 
+      if(!dataInfo || dataInfo.error || dataInfo.error_php){
+        console.error("Error en listado_select:", dataInfo ? (dataInfo.error || dataInfo.error_php) : "Sin respuesta");
+        return;
+      }
+
       let data=dataInfo.data;
-    
-      if(data==0){
+
+      if(data==0 || !data){
         contenido='<option value="0">[No hay datos]<\/option>';
       }
       else{

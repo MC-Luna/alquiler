@@ -306,8 +306,11 @@
 
 
 
+			$tabla = str_replace('src="/img/', 'src="/app/img/', $tabla);
+			$tabla = str_replace("src='/img/", "src='/app/img/", $tabla);
+
 			$retorno["resultado"]=1;
-			$retorno["mensaje"]=$tabla;	
+			$retorno["mensaje"]=$tabla;
 
 		}else{
 			$retorno["resultado"]=0;
