@@ -13,7 +13,6 @@
 	$consulta = $result->fetch_array(MYSQLI_NUM);
 	$t=$consulta[0];
 	$n=$consulta[1];
-	$web="https://mototrabajo.com/zona-de-pagos/?t=".$t."&n=". $n;
-	//echo $web;
+	$web="/pago_clientes.php";
 	header("Location:". $web);
 ?>

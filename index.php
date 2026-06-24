@@ -94,7 +94,7 @@ session_start();
         <div class="sidebar-brand-icon rotate-n-15">
          <!-- <i class="fas fa-motorcycle"></i>-->
         </div>
-        <div class="sidebar-brand-text mx-3"><img id="logos" src="https://app.mototrabajo.com/img/logo-kairos-blanco.png" style="width: 100%;"></div>
+        <div class="sidebar-brand-text mx-3"><img id="logos" src="img/motoapp_logo_light.png" style="width: 100%;"></div>
       </a>
 
       <!-- Divider -->
@@ -105,18 +105,8 @@ session_start();
         OPCIONES DEL MENÚ
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Menú</span>
-        </a>
-
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div id="div_opciones_menu" class="bg-white py-2 collapse-inner rounded btn_opcion_menu"></div>
-        </div>
-
-      </li>
+      <!-- Nav Items - generados dinámicamente por grupo -->
+      <div id="div_opciones_menu"></div>
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -405,7 +395,6 @@ session_start();
         s_codigo_documento=$(this).data("cod-doc");
         s_ruta=$(this).data("href");
         url=$(this).attr("href");
-        url="https://app.mototrabajo.com"+url; 
         $('#iframe_soporte_ver').show();
         $('#ModalVerDocumento').modal('show');
     });
@@ -481,7 +470,7 @@ function eliminar_documento(){
 
   }else{
     //cho "entonces jorge " . $_SESSION["codigo_usuario"];
-    header('Location: login.html');
+    header('Location: /login.html');
   }
 
 ?>

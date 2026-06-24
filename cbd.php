@@ -1,6 +1,6 @@
 <?Php
 
-	$mysql_host="localhost";
+	$mysql_host="pruebagencia.online";
 	$mysql_database="pruebaag_app";
 	$mysql_user="pruebaag_app";
 	$mysql_password="#knvD%06%!";

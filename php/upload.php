@@ -12,8 +12,7 @@
 		if (!empty($datos_padre)) {
 			$datos_padre=$datos_padre[0];
 
-			//$path = "/home4/market87/app.mototrabajo.com/archivos_cargados/".$datos_padre["ruta"];
-			$path = "/home2/zaguez01/app.mototrabajo.com/archivos_cargados/".$datos_padre["ruta"];
+			$path = dirname(__DIR__) . "/archivos_cargados/".$datos_padre["ruta"];
 
 			
 

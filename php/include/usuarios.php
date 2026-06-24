@@ -22,7 +22,7 @@ $resultado=$con->actualizar("tbl_usuarios","pass ='$password'",$filtro_update);
 			$notificar->consulta($email,'notificacion_usuario_nuevo',' where u.email="'.$email.'"');
 		}
 	}else{
-		$txt.="<h2><Ocurrió un error, con tu contraseña, ingresa tu correo en este en <a target='_blank' href='https://app.mototrabajo.com/forgot-password.html'>Restablecer contraseña</a></h2>";
+		$txt.="<h2>Ocurrió un error con tu contraseña. Contacta al administrador para restablecerla.</h2>";
 	}
 
 	mail($email,$subject,$txt,$headers);

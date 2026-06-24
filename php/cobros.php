@@ -79,7 +79,7 @@
                     $c_pagos++;
                     // Asignar aquí la credenciales de la cuenta elibom de esta manera:
                     //$elibom = new ElibomClient('email@correo.com', 'password');
-                    $sms_mensaje= $nombre . " mototrabajo te recuerda subir el soporte de pago en este link https://app.mototrabajo.com/@". $codigo_cliente. " para que sigas disfrutando de nuestro servicio";
+                    $sms_mensaje= $nombre . " te recuerda subir el soporte de pago en este link " . APP_URL . "/pago_clientes.php para que sigas disfrutando de nuestro servicio";
                     $deliveryId = $elibom->sendMessage($sms_numero,$sms_mensaje);
                     echo "Se genero el cobro para el cliente: ".$nombre. " con numero de celular ". $sms_numero. "</br><hr></br>";
                     $listado_sms.= $c_pagos." ) Se genero el cobro para el cliente: ".$nombre. " con numero de celular ". $sms_numero. "\r\n";
@@ -99,8 +99,8 @@
 
         $txt.="Listado de Personas que se le envio el sms. ". "\r\n";
         $txt.= $listado_sms;
-        $headers = "From: info@app.mototrabajo.com " . "\r\n" .
-        "CC: info@app.mototrabajo.com ";
+        $headers = "From: info@kairos.app " . "\r\n" .
+        "CC: info@kairos.app ";
         
         $email="erickzamoramontejo@gmail.com";
         mail($email,$subject,$txt,$headers);
