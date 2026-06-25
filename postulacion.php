@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Postulación - MotoTrabajo</title>
+  <title>Postulación - MotoApp</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -22,14 +22,19 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: .08em;
-      color: #6c757d;
-      margin-bottom: 0.75rem;
+      color: #007bff;
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 0.4rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1rem;
     }
-    .input-group-text {
-      min-width: 110px;
-      justify-content: center;
-      font-size: 0.85rem;
+    .form-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 0.3rem;
     }
+    .required-mark { color: #dc3545; }
     #div-exito { display: none; }
     #div-enviando { display: none; }
   </style>
@@ -63,109 +68,80 @@
             <h5 class="card-title mb-1">
               <i class="fas fa-motorcycle mr-2 text-primary"></i>Formulario de postulación
             </h5>
-            <p class="text-muted small mb-4">Completa tus datos para iniciar el proceso de vinculación con MotoTrabajo.</p>
+            <p class="text-muted small mb-0">Completa tus datos para iniciar el proceso de vinculación con MotoApp. Los campos con <span style="color:#dc3545;">*</span> son obligatorios.</p>
 
             <form id="form_postulacion" novalidate>
 
               <!-- Identificación -->
               <p class="section-title"><i class="fas fa-id-card mr-1"></i>Identificación</p>
-              <div class="form-row mb-3">
-                <div class="col-sm-5">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Tipo</span>
-                    </div>
-                    <select class="form-control" name="tipo_documento" id="tipo_documento" required>
-                      <option value="">Seleccione</option>
-                      <option value="cc">Cédula de Ciudadanía</option>
-                      <option value="ex">Cédula de Extranjería</option>
-                      <option value="pa">Pasaporte</option>
-                      <option value="nit">NIT</option>
-                    </select>
-                  </div>
+              <div class="form-row">
+                <div class="form-group col-md-5">
+                  <label class="form-label" for="tipo_documento">Tipo de documento <span class="required-mark">*</span></label>
+                  <select class="form-control" name="tipo_documento" id="tipo_documento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="cc">Cédula de Ciudadanía</option>
+                    <option value="ex">Cédula de Extranjería</option>
+                    <option value="pa">Pasaporte</option>
+                    <option value="nit">NIT</option>
+                  </select>
                 </div>
-                <div class="col-sm-7 mt-2 mt-sm-0">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Número ID</span>
-                    </div>
-                    <input type="text" class="form-control" name="identificacion" id="identificacion"
-                      placeholder="Ej: 1234567890" required>
-                  </div>
+                <div class="form-group col-md-7">
+                  <label class="form-label" for="identificacion">Número de documento <span class="required-mark">*</span></label>
+                  <input type="text" class="form-control" name="identificacion" id="identificacion"
+                    placeholder="Ej: 1023456789" required>
                 </div>
               </div>
 
-              <!-- Nombre -->
-              <p class="section-title mt-3"><i class="fas fa-user mr-1"></i>Datos personales</p>
-              <div class="form-row mb-3">
-                <div class="col-sm-6">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Nombres</span>
-                    </div>
-                    <input type="text" class="form-control" name="nombres" id="nombres" required>
-                  </div>
+              <!-- Datos personales -->
+              <p class="section-title"><i class="fas fa-user mr-1"></i>Datos personales</p>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="form-label" for="nombres">Nombres <span class="required-mark">*</span></label>
+                  <input type="text" class="form-control" name="nombres" id="nombres"
+                    placeholder="Ej: Juan Carlos" required>
                 </div>
-                <div class="col-sm-6 mt-2 mt-sm-0">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Apellidos</span>
-                    </div>
-                    <input type="text" class="form-control" name="apellidos" id="apellidos" required>
-                  </div>
+                <div class="form-group col-md-6">
+                  <label class="form-label" for="apellidos">Apellidos <span class="required-mark">*</span></label>
+                  <input type="text" class="form-control" name="apellidos" id="apellidos"
+                    placeholder="Ej: Gómez López" required>
                 </div>
               </div>
 
               <!-- Contacto -->
-              <p class="section-title mt-3"><i class="fas fa-phone mr-1"></i>Contacto</p>
-              <div class="form-row mb-3">
-                <div class="col-sm-4">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Teléfono</span>
-                    </div>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Fijo">
-                  </div>
+              <p class="section-title"><i class="fas fa-phone mr-1"></i>Contacto</p>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="form-label" for="celular">Celular <span class="required-mark">*</span></label>
+                  <input type="tel" class="form-control" name="celular" id="celular"
+                    placeholder="Ej: 3001234567" required>
                 </div>
-                <div class="col-sm-4 mt-2 mt-sm-0">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Celular</span>
-                    </div>
-                    <input type="tel" class="form-control" name="celular" id="celular" required placeholder="Ej: 3001234567">
-                  </div>
+                <div class="form-group col-md-6">
+                  <label class="form-label" for="correo">Correo electrónico</label>
+                  <input type="email" class="form-control" name="correo" id="correo"
+                    placeholder="tu@correo.com">
                 </div>
-                <div class="col-sm-4 mt-2 mt-sm-0">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Email</span>
-                    </div>
-                    <input type="email" class="form-control" name="correo" id="correo" placeholder="tu@correo.com">
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="form-label" for="telefono">Teléfono fijo <span class="text-muted" style="font-weight:400;">(opcional)</span></label>
+                  <input type="tel" class="form-control" name="telefono" id="telefono"
+                    placeholder="Ej: 6012345678">
                 </div>
               </div>
 
               <!-- Ubicación -->
-              <p class="section-title mt-3"><i class="fas fa-map-marker-alt mr-1"></i>Ubicación</p>
-              <div class="form-row mb-3">
-                <div class="col-sm-5">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Ciudad</span>
-                    </div>
-                    <select class="form-control" name="expedida" id="ciudades_leads" required>
-                      <option value="">Cargando...</option>
-                    </select>
-                  </div>
+              <p class="section-title"><i class="fas fa-map-marker-alt mr-1"></i>Ubicación</p>
+              <div class="form-row">
+                <div class="form-group col-md-5">
+                  <label class="form-label" for="ciudades_leads">Ciudad <span class="required-mark">*</span></label>
+                  <select class="form-control" name="expedida" id="ciudades_leads" required>
+                    <option value="">Cargando...</option>
+                  </select>
                 </div>
-                <div class="col-sm-7 mt-2 mt-sm-0">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Dirección</span>
-                    </div>
-                    <input type="text" class="form-control" name="direccion" id="direccion"
-                      placeholder="Ej: Cra 10 # 25-30">
-                  </div>
+                <div class="form-group col-md-7">
+                  <label class="form-label" for="direccion">Dirección de residencia</label>
+                  <input type="text" class="form-control" name="direccion" id="direccion"
+                    placeholder="Ej: Cra 10 # 25-30">
                 </div>
               </div>
 
