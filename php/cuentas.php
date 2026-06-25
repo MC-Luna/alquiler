@@ -81,9 +81,9 @@
 				$email = $trimmed_data['email'];
 				$nombre = $trimmed_data['nombre'];
 				
-				$subject = "MotoTrabajo: Hola ". $nombre;
+				$subject = "MotoApp: Hola ". $nombre;
 				$txt.="<h1>Bienvenido  ". $nombre. "</h1>";
-				$txt.="<p>Ahora perteneces a <b>Mototrabajo</b><br><br>Estas son tus credenciales de ingreso:<br>";
+				$txt.="<p>Ahora perteneces a <b>MotoApp</b><br><br>Estas son tus credenciales de ingreso:<br>";
 
 				$txt.="Usuario ". $email. "<br>";
 				$txt.="      Contraseña: ". $clave_aleatoria;

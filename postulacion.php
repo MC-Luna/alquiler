@@ -192,7 +192,7 @@
         </div>
 
         <div class="text-center">
-          <small class="text-muted">Versión 1.7 &mdash; MotoTrabajo &amp; Motogou</small>
+          <small class="text-muted">Versión 1.7 &mdash; MotoApp</small>
         </div>
       </div>
 
