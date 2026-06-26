@@ -200,7 +200,7 @@ $(document).ready(function(){
 
 
 
-        require('../cbd.php');
+        require(__DIR__.'/../cbd.php');
 
 
 

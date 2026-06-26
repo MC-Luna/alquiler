@@ -3,7 +3,7 @@
 	$mysql_host="pruebagencia.online";
 	$mysql_database="pruebaag_app";
 	$mysql_user="pruebaag_app";
-	$mysql_password="#knvD%06%!";
+	$mysql_password="#Bsh%W&j#-8!";
 	
 	$db = new mysqli($mysql_host, $mysql_user, $mysql_password, $mysql_database);
 	

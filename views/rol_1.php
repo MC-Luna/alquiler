@@ -88,7 +88,7 @@ $(document).ready(function(){
 	    },
 
         <?php
-        require "../cbd.php";
+        require(__DIR__."/../cbd.php");
 
         $sql = "select
             DATE_FORMAT(e.fecha,'%Y-%m-%dT%H:%i:00') as 'inicio',

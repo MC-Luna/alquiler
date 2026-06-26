@@ -4,7 +4,7 @@
 	header("Pragma: no-cache"); 
 	header("Expires: 0");
 
-	 require('../cbd.php');
+	 require(__DIR__.'/../cbd.php');
 	
 	$output = "";
 	
