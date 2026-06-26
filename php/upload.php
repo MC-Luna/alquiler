@@ -41,19 +41,33 @@
 		    	rename($rutaArchivo, $path."/".$nuevoNombre);
 
 		    	//SE REGUISTRA EL ARCHIVO
-		    	$campos=array();
-		    	$campos["codigo_tipo_padre"]=$codigo_tipo_padre;
-		    	$campos["tipo_documento"]=$tipo_documento;
-		    	$campos["codigo_padre"]=$codigo_registro;
-		    	$campos["nombre"]=$nuevoNombre;
-		    	$campos["tipo"]=$extension;
+		    	$existente=$db->buscar("tbl_conf_docs",
+		    		"codigo_tipo_padre='".$codigo_tipo_padre."' AND tipo_documento='".$tipo_documento."' AND codigo_padre='".$codigo_registro."'");
 
-		    	$resultado=$db->insertar("tbl_conf_docs",$campos);
+		    	if (!empty($existente)) {
+		    		$archivoViejo=$path."/".$existente[0]["nombre"];
+		    		if (file_exists($archivoViejo)) {
+		    			unlink($archivoViejo);
+		    		}
+		    		$setQuery="nombre='".$nuevoNombre."', tipo='".$extension."'";
+		    		$whereQuery="codigo_tipo_padre='".$codigo_tipo_padre."' AND tipo_documento='".$tipo_documento."' AND codigo_padre='".$codigo_registro."'";
+		    		$upd=$db->actualizar("tbl_conf_docs",$setQuery,$whereQuery);
+		    		$resultado=$upd ? "Archivo Actualizado" : "No se actualizó el archivo";
+		    	} else {
+		    		$campos=array();
+		    		$campos["codigo_tipo_padre"]=$codigo_tipo_padre;
+		    		$campos["tipo_documento"]=$tipo_documento;
+		    		$campos["codigo_padre"]=$codigo_registro;
+		    		$campos["nombre"]=$nuevoNombre;
+		    		$campos["tipo"]=$extension;
 
-		    	if ($resultado==false) {
-		    		$resultado="No se registro el archivo";
-		    	}else{
-		    		$resultado="Archivo Registrado";
+		    		$resultado=$db->insertar("tbl_conf_docs",$campos);
+
+		    		if ($resultado==false) {
+		    			$resultado="No se registro el archivo";
+		    		}else{
+		    			$resultado="Archivo Registrado";
+		    		}
 		    	}
 				
 			}else{
