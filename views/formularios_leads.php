@@ -891,28 +891,32 @@
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Cedula</label>
                                 <input name="cedula" class="form-control" type="file" id="formFile">
-                            </div>					
+                                <div id="preview_cedula" class="mt-1"></div>
+                            </div>
                         </div>
 
                         <div class="col">
                             <div class="mb-3">
                             <label for="formFile" class="form-label">Licencia</label>
                             <input name="licencia" class="form-control" type="file" id="formFile">
-                            </div>					
+                            <div id="preview_licencia" class="mt-1"></div>
+                            </div>
                         </div>
 
                         <div class="col">
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Recibo</label>
                                 <input name="recibo" class="form-control" type="file" id="formFile">
-                            </div>					
+                                <div id="preview_recibo" class="mt-1"></div>
+                            </div>
                         </div>
 
                         <div class="col">
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Certificado laboral</label>
                                 <input name="certificado_laboral" class="form-control" type="file" id="formFile">
-                            </div>					
+                                <div id="preview_certificado_laboral" class="mt-1"></div>
+                            </div>
                         </div>	
 
                     </div>

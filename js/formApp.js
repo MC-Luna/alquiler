@@ -146,7 +146,24 @@ function mostrarModalEditar(e,tipoModulo){
             }
 
             mostrarDataEdit(data.info_datos_seguridad[0],idform="registro_seguridad_leads",btn="btn_cambiar_seguridad_leads");
-            
+
+            const docPreviewMap = {1:'preview_cedula', 2:'preview_licencia', 3:'preview_recibo', 4:'preview_certificado_laboral'};
+            const imageExts = ['jpg','jpeg','png','gif','webp'];
+            Object.values(docPreviewMap).forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML=''; });
+            if(data.docs && data.docs.length > 0){
+                data.docs.forEach(doc => {
+                    const previewDiv = document.getElementById(docPreviewMap[doc.tipo_documento]);
+                    if(!previewDiv) return;
+                    const url = `/app/archivos_cargados/${doc.ruta}/${doc.nombre}`;
+                    const ext = (doc.tipo||'').toLowerCase();
+                    if(imageExts.includes(ext)){
+                        previewDiv.innerHTML = `<a href="${url}" target="_blank"><img src="${url}" style="max-width:100%;max-height:120px;border:1px solid #ddd;border-radius:4px;margin-top:4px" title="Ver archivo"></a>`;
+                    } else {
+                        previewDiv.innerHTML = `<a href="${url}" target="_blank" class="btn btn-sm btn-outline-secondary mt-1"><i class="fas fa-file"></i> Ver archivo</a>`;
+                    }
+                });
+            }
+
             $("#modal_leds_edit").modal('show');
 
         }

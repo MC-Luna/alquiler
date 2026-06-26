@@ -76,11 +76,20 @@ session_start();
         $res_datos=$conexion->buscar('tbl_clientes', 'codigo_cliente='.$_POST['ID']);
         $res_seguridad_datos=$conexion->buscar('tbl_seguridad_clientes', 'codigo_cliente='.$_POST['ID']);
 
+        $res_docs_raw=$conexion->ejecutar_sql(
+            "SELECT d.tipo_documento, d.nombre, d.tipo, p.ruta
+             FROM tbl_conf_docs d
+             INNER JOIN tbl_conf_docs_padres p ON p.codigo_padre = d.codigo_tipo_padre
+             WHERE d.codigo_tipo_padre = 1 AND d.codigo_padre = ".intval($_POST['ID'])
+        );
+        $res_docs = $res_docs_raw ? $res_docs_raw->fetch_all(MYSQLI_ASSOC) : [];
+
         $completeArr=array(
             'infodatos' => $res_datos,
             'info_datos_seguridad' => $res_seguridad_datos,
+            'docs' => $res_docs,
         );
-        
+
         echo json_encode($completeArr);
 
     }
