@@ -262,4 +262,4 @@ function cargar_tabla(){
 }
 
 </script>
-<script type="text/javascript" charset="utf8" src="views/views.js"></script>
+<script type="text/javascript" charset="utf8" src="views/views.js?20260701"></script>

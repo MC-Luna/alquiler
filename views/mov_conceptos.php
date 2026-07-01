@@ -123,4 +123,4 @@ session_start();
 
 
 </script>
-<script type="text/javascript" charset="utf8" src="views/view.js"></script>
+<script type="text/javascript" charset="utf8" src="views/view.js?20260701"></script>

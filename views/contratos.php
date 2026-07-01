@@ -413,4 +413,4 @@
 	}
 
 </script>
-<script type="text/javascript" charset="utf8" src="views/views2.js?231037"></script>
+<script type="text/javascript" charset="utf8" src="views/views2.js?20260701"></script>
