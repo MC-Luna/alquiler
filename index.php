@@ -380,6 +380,7 @@ session_start();
     var v_categoria=0;
     var v_tipo_documento=0;
     var v_codigo_padre=0;
+    var v_refresh_div=null;
     var s_codigo_padre=0;
 
   $(document).ready(function () {
@@ -403,10 +404,11 @@ session_start();
     cargar_view('views/configuracion.php');
   }
 
-  function modal_subir_documento(categoria,tipo_documento,codigo_padre){
+  function modal_subir_documento(categoria,tipo_documento,codigo_padre,refreshDiv){
     v_categoria=categoria;
     v_tipo_documento=tipo_documento;
     v_codigo_padre=codigo_padre;
+    v_refresh_div=refreshDiv || null;
     $("#frm_subir_documento")[0].reset();
     $('#ModalSubirDocumento').modal('show');
   }
@@ -432,6 +434,20 @@ session_start();
         alert(res);
         //console.log("holaaaa");
         cargar_listado();
+        if(v_refresh_div){
+          $.ajax({
+            url: '/app/ajax/infomodal_WEBSERVICE.php',
+            type: 'post',
+            dataType: 'html',
+            data: {
+              SoloSoportes: true,
+              categoria: v_categoria,
+              codigo_padre: v_codigo_padre
+            }
+          }).done(function(html){
+            $("#" + v_refresh_div).html(html);
+          });
+        }
         //$("#mensaje").html("Respuesta: " + res);
 
       });

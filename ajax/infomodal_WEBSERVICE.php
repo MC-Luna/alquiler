@@ -155,6 +155,8 @@ session_start();
 
         $tipos=$GLOBALS['conexion']->ejecutar_sql($sql)->fetch_all(MYSQLI_ASSOC);
 
+        $divRefresco = $codigo_tipo_padre==1 ? 'div_listado_soportes' : 'div_listado_documentos';
+
         $html="<table class='table table-striped'><thead><tr><th>Documento</th><th></th></tr></thead><tbody>";
 
         foreach($tipos as $tipo){
@@ -162,7 +164,7 @@ session_start();
             if(!empty($tipo['nombre'])){
                 $html.="<a href='/app/archivos_cargados/".htmlspecialchars($ruta)."/".htmlspecialchars($tipo['nombre'])."' target='_blank' class='btn btn-sm btn-outline-primary'>Ver</a>";
             }else{
-                $html.="<a href='#' onclick='modal_subir_documento(".$codigo_tipo_padre.",".$tipo['codigo_tipo_documento'].",".$id.")' class='btn btn-sm btn-outline-secondary'>Subir</a>";
+                $html.="<a href='#' onclick=\"modal_subir_documento(".$codigo_tipo_padre.",".$tipo['codigo_tipo_documento'].",".$id.",'".$divRefresco."')\" class='btn btn-sm btn-outline-secondary'>Subir</a>";
             }
             $html.="</td></tr>";
         }
@@ -170,6 +172,11 @@ session_start();
         $html.="</tbody></table>";
 
         return $html;
+    }
+
+    if(isset($_POST['SoloSoportes'])){
+        echo dataTablaSoportes(intval($_POST['categoria']), intval($_POST['codigo_padre']));
+        exit();
     }
 
     $mensaje=array();
