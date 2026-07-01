@@ -188,6 +188,8 @@
 
 					<li><a href="#section-3"><span>Matenimiento</span></a></li>
 
+					<li><a href="#section-4"><span>Documentos</span></a></li>
+
 
 
 
@@ -1136,7 +1138,13 @@
 
     </section>
 
+	<section id="#section-4">
+		<h1 style="text-align: center;">DOCUMENTOS</h1>
+		<div class="container">
 
+			<div id="div_listado_documentos"></div>
+		</div>
+	</section>
 
 
 

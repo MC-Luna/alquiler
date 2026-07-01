@@ -140,6 +140,38 @@ session_start();
 
     }
 
+    function dataTablaSoportes($codigo_tipo_padre, $id){
+
+        $datos_padre=$GLOBALS['conexion']->buscar("tbl_conf_docs_padres","codigo_padre=".$codigo_tipo_padre);
+        $ruta=$datos_padre[0]['ruta'];
+
+        $sql="SELECT t.codigo_tipo_documento, t.tipo_documento, d.nombre
+        FROM tbl_conf_docs_tipos t
+        LEFT JOIN tbl_conf_docs d
+            ON d.tipo_documento=t.codigo_tipo_documento
+            AND d.codigo_tipo_padre=".$codigo_tipo_padre."
+            AND d.codigo_padre=".$id."
+        WHERE t.codigo_padre=".$codigo_tipo_padre;
+
+        $tipos=$GLOBALS['conexion']->ejecutar_sql($sql)->fetch_all(MYSQLI_ASSOC);
+
+        $html="<table class='table table-striped'><thead><tr><th>Documento</th><th></th></tr></thead><tbody>";
+
+        foreach($tipos as $tipo){
+            $html.="<tr><td>".htmlspecialchars($tipo['tipo_documento'])."</td><td>";
+            if(!empty($tipo['nombre'])){
+                $html.="<a href='/app/archivos_cargados/".htmlspecialchars($ruta)."/".htmlspecialchars($tipo['nombre'])."' target='_blank' class='btn btn-sm btn-outline-primary'>Ver</a>";
+            }else{
+                $html.="<a href='#' onclick='modal_subir_documento(".$codigo_tipo_padre.",".$tipo['codigo_tipo_documento'].",".$id.")' class='btn btn-sm btn-outline-secondary'>Subir</a>";
+            }
+            $html.="</td></tr>";
+        }
+
+        $html.="</tbody></table>";
+
+        return $html;
+    }
+
     $mensaje=array();
 
     if(isset($_POST['ID']) && $_POST['TipoModulo'] == "ModuloCliente"){
@@ -151,6 +183,7 @@ session_start();
         $info_tabla_pagos=dataTablaPagos($_POST['ID']);
         $info_tabla_contratos=dataTablaContrato($_POST['ID']);
         $info_form_contrato_clientes=dataFormContratoCliente($_POST['ID']);
+        $info_soportes=dataTablaSoportes(1, $infoData['idContacto']);
 
         $completeArr=array(
 
@@ -158,7 +191,8 @@ session_start();
             'info_datos_seguridad' => $res_seguridad_datos,
             'info_tabla_pagos' => $info_tabla_pagos,
             'info_tabla_contratos' => $info_tabla_contratos,
-            'info_form_contrato_clientes' => $info_form_contrato_clientes,  
+            'info_form_contrato_clientes' => $info_form_contrato_clientes,
+            'info_soportes' => $info_soportes,
             'id' => $infoData['idContacto']
 
         );
@@ -177,13 +211,15 @@ session_start();
         $info_tabla_motos_pagos=dataTablaPagosMoto($_POST['ID']);
         $info_tabla_motos_mantenimiento=dataTablaMantenimiento($_POST['ID']);
         $cedes=sacarSedes();
+        $info_soportes=dataTablaSoportes(2, $infoData['idContacto']);
 
         $completeArr=array(
             'info_tabla_moto_datos' =>  $info_tabla_motos_datos,
             'info_tabla_moto_pago' =>  $info_tabla_motos_pagos,
             'info_form_moto_datos' => $res_motos_datos,
             'info_tabla_mantenimiento_motos' =>  $info_tabla_motos_mantenimiento,
-            'cedes' => $cedes
+            'cedes' => $cedes,
+            'info_soportes' => $info_soportes
         );
 
         echo json_encode($completeArr);

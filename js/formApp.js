@@ -32,7 +32,7 @@ function mostrarModalEditar(e,tipoModulo){
         if(tipoModulo=="ModuloCliente"){
 
             var cod_cliente=e.target.value;
-                listado_consulta("div_listado_soportes","cliente_soportes"," where d.codigo_padre="+ cod_cliente,"",false);
+                document.querySelector('#div_listado_soportes').innerHTML = data.info_soportes;
 
                 //creo un array con el id de los formularios y de las tablas para limpiarlos siempre que se llame la api.
 
@@ -82,9 +82,7 @@ function mostrarModalEditar(e,tipoModulo){
 
         }else if(tipoModulo=="ModuloMotos"){
 
-            
-
-
+            document.querySelector('#div_listado_documentos').innerHTML = data.info_soportes;
 
                 let arrayFormularios=[
                     'form_datos_motos',
