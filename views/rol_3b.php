@@ -455,7 +455,7 @@ $(document).ready(function(){
                 
                 $.ajax({
                     method: 'POST',
-                    url: '/ajax/actualizar_pago2.php',
+                    url: '/app/ajax/actualizar_pago2.php',
                     data: campos,
                     dataType: 'json'
                 }).done(function(response){
@@ -536,7 +536,7 @@ function validado(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
         data: campos,
         success: function(data){
 
@@ -802,7 +802,7 @@ function actualizar_contrato(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
         data: campos,
         success: function(data){
 
@@ -827,7 +827,7 @@ function actualizar_contrato(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/actualizar_pago.php',
+        url: '/app/ajax/actualizar_pago.php',
         data: campos,
 
         success: function(data){
@@ -851,7 +851,7 @@ function actualizar(){
         type: 'POST',
         async: true,
 
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
 
         data: edicion,
 
@@ -909,7 +909,7 @@ function guardar_estado(){
         $.ajax({
             type: 'POST',
             async: false,
-            url: '/ajax/registro_guardar.php',
+            url: '/app/ajax/registro_guardar.php',
             data: campos,
             success: function(data){
             },

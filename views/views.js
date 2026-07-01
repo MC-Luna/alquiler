@@ -65,7 +65,7 @@
 
 			async: true,
 
-			url: '/ajax/registro_editar.php',
+			url: '/app/ajax/registro_editar.php',
 
 			data: edicion,
 
@@ -282,7 +282,7 @@
 		$.ajax({
 		  	type: 'POST',
 		  	async: false,
-		  	url: '/ajax/registro_guardar.php',
+		  	url: '/app/ajax/registro_guardar.php',
 		  	data: campos,
 			dataType: 'text',
 		  	success: function(data){

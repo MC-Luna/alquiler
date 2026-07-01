@@ -419,7 +419,7 @@ session_start();
     formData.append('codigo_padre', v_codigo_padre);
 
     $.ajax({
-      url: '/ajax/subir_documento.php',
+      url: '/app/ajax/subir_documento.php',
       type: "post",
       dataType: "html",
       data: formData,
@@ -445,7 +445,7 @@ function eliminar_documento(){
   formData.append('codigo_usuario', codigo_usuario);
 
   $.ajax({
-    url: '/ajax/eliminar_documento.php',
+    url: '/app/ajax/eliminar_documento.php',
     type: "post",
     dataType: "html",
     data: formData,

@@ -330,7 +330,7 @@ $(document).on('click','#btn_guardar_numero_soporte', function(e){
 
 			$.ajax({
 				method: 'POST',
-				url: '/ajax/actualizar_pago.php',
+				url: '/app/ajax/actualizar_pago.php',
                 data: campos,
                 /*
 				success: function(data){
@@ -434,7 +434,7 @@ function fn_reversar_pago(codigo_contrato_pago){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/reversar_pago.php',
+        url: '/app/ajax/reversar_pago.php',
         data: campos,
         success: function(data){
             console.table(data);
@@ -465,7 +465,7 @@ function validado(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
         data: campos,
         success: function(data){
         //console.log("holaaaa");
@@ -498,7 +498,7 @@ function actualizar_contrato(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
         data: campos,
         success: function(data){
         //console.log("holaaaa");
@@ -522,7 +522,7 @@ function actualizar_contrato(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/actualizar_pago.php',
+        url: '/app/ajax/actualizar_pago.php',
         data: campos,
         success: function(data){
             console.log("desde el ajax de actualziar pago", data)
@@ -543,7 +543,7 @@ function actualizar(){
     $.ajax({
         type: 'POST',
         async: true,
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
         data: edicion,
         success: function(data){
             $('#ModalEditar').modal('hide');

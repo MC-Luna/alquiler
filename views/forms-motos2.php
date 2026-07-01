@@ -202,7 +202,7 @@ session_start();
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1">Soat</span>
 							</div>
-							<input class="form-control" name="fecha_soat" id="fecha_soat" type="date" value="0000-00-00" id="example-datetime-local-input">
+							<input class="form-control" name="fecha_soat" id="fecha_soat" type="date">
 						</div>
 					</div>
 
@@ -211,7 +211,7 @@ session_start();
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1">Tecnomecánica</span>
 							</div>
-							<input class="form-control" name="fecha_tecno" id="fecha_tecno" type="date" value="0000-00-00" id="example-datetime-local-input">
+							<input class="form-control" name="fecha_tecno" id="fecha_tecno" type="date">
 						</div>
 					</div>
 		   		</div>
@@ -222,7 +222,7 @@ session_start();
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1">Matricula</span>
 							</div>
-							<input class="form-control" name="fecha_matricula" id="fecha_matricula" type="date" value="0000-00-00" id="example-datetime-local-input">
+							<input class="form-control" name="fecha_matricula" id="fecha_matricula" type="date">
 						</div>
 					</div>
 
@@ -231,7 +231,7 @@ session_start();
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1">Compra</span>
 							</div>
-							<input class="form-control" name="fecha_compra" id="fecha_compra" type="date" value="0000-00-00" id="example-datetime-local-input">
+							<input class="form-control" name="fecha_compra" id="fecha_compra" type="date">
 						</div>
 					</div>
 		   		</div>

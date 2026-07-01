@@ -527,7 +527,7 @@ session_start();
 			$.ajax({
 				type: 'POST',
 				async: true,
-				url: '/ajax/registro_editar.php',
+				url: '/app/ajax/registro_editar.php',
 				data: campos,
 				success: function(data){
 					alert(data);
@@ -708,7 +708,7 @@ session_start();
 			$.ajax({
 				type: 'POST',
 				async: false,
-				url: '/ajax/registro_guardar.php',
+				url: '/app/ajax/registro_guardar.php',
 				data: campos,
 				success: function(data){
 				},
@@ -755,7 +755,7 @@ session_start();
 			$.ajax({
 				type: 'POST',
 				async: false,
-				url: '/ajax/registro_guardar.php',
+				url: '/app/ajax/registro_guardar.php',
 				data: campos,
 				success: function(data){
 				},
@@ -802,7 +802,7 @@ session_start();
 			$.ajax({
 				type: 'POST',
 				async: false,
-				url: '/ajax/registro_guardar.php',
+				url: '/app/ajax/registro_guardar.php',
 				data: campos,
 				success: function(data){
 				},

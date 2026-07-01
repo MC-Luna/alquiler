@@ -594,7 +594,7 @@ $(document).on('click','#btn_guardar_numero_soporte', function(e){
 
 				method: 'POST',
 
-				url: '/ajax/actualizar_pago.php',
+				url: '/app/ajax/actualizar_pago.php',
 
                 data: campos,
 
@@ -785,7 +785,7 @@ function validado(){
 
         async: true,
 
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
 
         data: campos,
 
@@ -833,7 +833,7 @@ function actualizar_contrato(){
 
         async: true,
 
-        url: '/ajax/registro_editar.php',
+        url: '/app/ajax/registro_editar.php',
 
         data: campos,
 
@@ -881,7 +881,7 @@ function actualizar_contrato(){
 
         async: true,
 
-        url: '/ajax/actualizar_pago.php',
+        url: '/app/ajax/actualizar_pago.php',
 
         data: campos,
 

@@ -239,7 +239,7 @@ session_start();
 
 			  </div>
 
-			   <input class="form-control" name="fechacompra" type="date" value="0000-00-00" id="example-datetime-local-input">
+			   <input class="form-control" name="fechacompra" type="date" id="example-datetime-local-input">
 
 			</div>
 
@@ -491,7 +491,7 @@ function actualizar_categoria(id_mantenimiento){
 
 		type: 'POST',
 		async: true,
-		url: '/ajax/registro_editar.php',
+		url: '/app/ajax/registro_editar.php',
 		data: edicion_c,
 		success: function(data){
 			alert(data);
@@ -545,7 +545,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: 'POST',
 			async: true,
-			url: '/ajax/registro_editar.php',
+			url: '/app/ajax/registro_editar.php',
 			data: campos,
 			success: function(data){
 				alert(data);
@@ -782,7 +782,7 @@ function guardar_estado(){
 		$.ajax({
 			type: 'POST',
 			async: false,
-			url: '/ajax/registro_guardar.php',
+			url: '/app/ajax/registro_guardar.php',
 			data: campos,
 			success: function(data){
 			},

@@ -65,7 +65,7 @@
 
 			async: true,
 
-			url: '/ajax/registro_editar.php',
+			url: '/app/ajax/registro_editar.php',
 
 			data: edicion,
 
@@ -307,7 +307,7 @@
 
 		  	async: false,
 
-		  	url: '/ajax/registro_guardar.php',
+		  	url: '/app/ajax/registro_guardar.php',
 
 		  	data: campos,
 

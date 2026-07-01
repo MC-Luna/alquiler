@@ -208,7 +208,7 @@ $(document).on('click','.editar', function(e){
 	$.ajax({
 		type: 'POST',
 		async: true,
-		url: '/ajax/registro_editar.php',
+		url: '/app/ajax/registro_editar.php',
 		data: campos,
 		success: function(data){
 		//console.log("holaaaa");
@@ -310,7 +310,7 @@ function guardar(){
 		formData.append("formulario",identidad.formulario);
 		//formData.append(f.attr("name"), $(this)[0].files[0]);
 		$.ajax({
-			url: '/ajax/registro_erogacion.php',
+			url: '/app/ajax/registro_erogacion.php',
 			type: "post",
 			dataType: "html",
 			data: formData,
@@ -335,7 +335,7 @@ console.log(campos);
 $.ajax({
 	  type: 'POST',
 	  async: false,
-	  url: '/ajax/registro_guardar.php',
+	  url: '/app/ajax/registro_guardar.php',
 	  data: campos,
 	  success: function(data){
 	  //console.log("holaaaa");

@@ -342,7 +342,7 @@ var myChart = null;
 		listado(form[0].div_listado,form[0].listado,filtro_chart,1,true);
 
 		$.ajax({
-			url: '/ajax/chart_movimientos.php?'+ $("#form_consulta").serialize(), // Nombre del archivo PHP que maneja la consulta
+			url: '/app/ajax/chart_movimientos.php?'+ $("#form_consulta").serialize(), // Nombre del archivo PHP que maneja la consulta
 			method: 'GET',
 			success: function(response) {
 				$("#myChart").html("");

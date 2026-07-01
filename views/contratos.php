@@ -298,7 +298,7 @@
 			if(confirm('Seguro que desea dar de baja este contrato?')){
 
 			
-				let url="/ajax/registro_editar.php";
+				let url="/app/ajax/registro_editar.php";
 				let data=new FormData(form);
 			
 				fetch(url, {
@@ -393,7 +393,7 @@
 		var formData = new FormData(document.getElementById("registro_contrato"));
 
 		$.ajax({
-			url: '/ajax/registro_contrato.php',
+			url: '/app/ajax/registro_contrato.php',
 			type: "post",
 			dataType: "html",
 			data: formData,

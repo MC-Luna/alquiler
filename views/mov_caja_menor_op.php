@@ -318,7 +318,7 @@ if($_SESSION['codigo_rol']==1){
 	function valor_caja_menor(sede){
 
 		$.ajax({
-			url: '/ajax/mov_total_caja_menor.php',
+			url: '/app/ajax/mov_total_caja_menor.php',
 			type: "post",
 			dataType: "html",
 			data: { 
@@ -344,7 +344,7 @@ if($_SESSION['codigo_rol']==1){
   		datos+="&origen="+origen+"&destino="+destino;
 
 		$.ajax({
-			url: '/ajax/mov_transferencia.php',
+			url: '/app/ajax/mov_transferencia.php',
 			type: "post",
 			dataType: "html",
 			data: datos,

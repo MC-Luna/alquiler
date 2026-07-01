@@ -35,7 +35,7 @@ if(!$result= $conn->query($sql)){
         }
     }
 
-    $url_pdf = "/ajax/generar_contrato.php?id=" . $codigo_contrato;
+    $url_pdf = "/app/ajax/generar_contrato.php?id=" . $codigo_contrato;
     echo "Se realizó registro del contrato nro <strong>$codigo_contrato</strong>.<br><br>"
        . "<a href='$url_pdf' target='_blank' style='background:#1a1a2e;color:#fff;padding:8px 18px;border-radius:6px;text-decoration:none;'>🖨️ Ver e Imprimir Contrato</a>";
 }

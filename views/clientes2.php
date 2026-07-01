@@ -86,7 +86,7 @@ $(document).ready(function() {
 
 		async: true,
 
-		url: '/ajax/registro_editar.php',
+		url: '/app/ajax/registro_editar.php',
 
 		data: campos,
 
@@ -213,7 +213,7 @@ function cargar_tabla(){
 			var formData = new FormData(document.getElementById("registro"));
 
 			$.ajax({
-				url: '/ajax/registro_cliente2.php',
+				url: '/app/ajax/registro_cliente2.php',
 				type: "post",
 				dataType: "html",
 				data: formData,

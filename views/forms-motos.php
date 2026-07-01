@@ -778,7 +778,7 @@
 
 
 
-			   <input class="form-control" name="fecha_compra" id="fecha_compra" type="date" value="0000-00-00" id="example-datetime-local-input">
+			   <input class="form-control" name="fecha_compra" id="fecha_compra" type="date">
 
 
 

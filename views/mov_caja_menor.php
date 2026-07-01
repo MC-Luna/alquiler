@@ -296,7 +296,7 @@ hollaaa
 	function valor_caja_menor(sede){
 
 		$.ajax({
-			url: '/ajax/mov_total_caja_menor.php',
+			url: '/app/ajax/mov_total_caja_menor.php',
 			type: "post",
 			dataType: "html",
 			data: { 

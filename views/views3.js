@@ -30,7 +30,7 @@
 		$.ajax({
 			type: 'POST',
 			async: true,
-			url: '/ajax/registro_editar.php',
+			url: '/app/ajax/registro_editar.php',
 			data: edicion,
 			success: function(data){
 
@@ -160,15 +160,17 @@
 
 		});
 
-		$('.mfp-pop').magnificPopup({
-			disableOn: function() { if($(window).width()<992){return false; } return true;}
-	  	});
-
-		$("#div_listado table").on('page.dt', function(){
+		if($.fn.magnificPopup){
 			$('.mfp-pop').magnificPopup({
 				disableOn: function() { if($(window).width()<992){return false; } return true;}
-		  });
-		});
+			});
+
+			$("#div_listado table").on('page.dt', function(){
+				$('.mfp-pop').magnificPopup({
+					disableOn: function() { if($(window).width()<992){return false; } return true;}
+				});
+			});
+		}
 		
 	}
 
@@ -240,7 +242,7 @@
 
 		  	async: false,
 
-		  	url: '/ajax/registro_guardar.php',
+		  	url: '/app/ajax/registro_guardar.php',
 
 		  	data: campos,
 

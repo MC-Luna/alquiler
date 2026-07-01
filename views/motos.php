@@ -302,7 +302,7 @@
 
 			  </div>
 
-			   <input class="form-control" name="fechacompra" type="date" value="0000-00-00" id="example-datetime-local-input">
+			   <input class="form-control" name="fechacompra" type="date" id="example-datetime-local-input">
 
 			</div>
 
@@ -473,7 +473,7 @@ $(document).on('click','.editar', function(e){
 
 		async: true,
 
-		url: '/ajax/registro_editar.php',
+		url: '/app/ajax/registro_editar.php',
 
 		data: campos,
 
@@ -680,7 +680,7 @@ function guardar(){
 
 		async: false,
 
-		url: '/ajax/registro_guardar.php',
+		url: '/app/ajax/registro_guardar.php',
 
 		data: campos,
 

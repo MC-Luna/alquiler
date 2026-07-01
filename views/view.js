@@ -127,15 +127,17 @@
 
 		});
 
-		$('.mfp-pop').magnificPopup({
-			disableOn: function() { if($(window).width()<992){return false; } return true;}
-	  	});
-
-		$("#div_listado table").on('page.dt', function(){
+		if($.fn.magnificPopup){
 			$('.mfp-pop').magnificPopup({
 				disableOn: function() { if($(window).width()<992){return false; } return true;}
-		  });
-		});
+			});
+
+			$("#div_listado table").on('page.dt', function(){
+				$('.mfp-pop').magnificPopup({
+					disableOn: function() { if($(window).width()<992){return false; } return true;}
+				});
+			});
+		}
 		
 	}
 
