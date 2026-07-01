@@ -19,6 +19,126 @@ session_start();
 //print_r($_FILES);
 //echo "</pre>";
 
+    function sacarSedes(){
+
+        $sql="SELECT codigo_sede, nombre FROM tbl_sedes";
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+    }
+
+    function dataFormContratoCliente($id){
+
+        $sql="SELECT fecha_proximo_cobro, valor_pagar, frecuencia_cobro, clieTable.uso_moto as 'uso_moto'
+        FROM tbl_contratos tc
+        INNER JOIN tbl_clientes clieTable
+        ON tc.codigo_cliente=clieTable.codigo_cliente
+        WHERE tc.codigo_cliente=".$id;
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+    }
+    function dataTablaMantenimiento($id){
+
+        $sql = "SELECT
+        m.fecha_mantenimiento AS 'FECHA',
+        mc.descripcion AS 'CATEGORIA',
+        LEFT(p.razon_social,12) as 'PROVEEDOR',
+        m.concepto as 'CONCEPTO',";
+
+        if($_SESSION['codigo_rol']==1){
+            $sql.="CONCAT(\"<a href='#'  class='editar_categoria' data-id_mantenimiento='\", m.id_mantenimiento,\"' >\",mc.descripcion,\"</a>\") AS 'CATEGORIA',";
+        }else{
+            $sql.="mc.descripcion AS 'CATEGORIA',";
+        }
+
+        $sql.="format(m.valor_mantenimiento,0) AS 'VALOR',
+        m.observaciones_mantenimiento AS 'OBSERVACIONES',
+        IF(dc.nombre IS NULL,
+            CONCAT(\"<a href='#' onclick='modal_subir_documento(6,11,\", m.id_mantenimiento,\")'><b>Subir</b></a>\"),
+            CONCAT(\"<a href='/archivos_cargados/registro_gastos/\", dc.nombre,\"' target='_blank'>Ver</a>\")
+        ) AS 'FACTURA'
+    FROM tbl_mantenimiento_motos m
+    INNER JOIN tbl_mantenimiento_moto_conceptos mc ON mc.codigo_concepto = m.codigo_concepto
+
+    LEFT JOIN tbl_proveedores p ON
+    p.codigo_proveedor = m.codigo_proveedor
+
+    LEFT JOIN tbl_conf_docs dc ON dc.codigo_padre = m.id_mantenimiento AND dc.tipo_documento = 11
+    WHERE codigo_moto= " . $id;
+
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+    }
+
+
+    function dataTablaDatosMoto($id){
+
+        $sql="SELECT CONCAT(clieTable.nombres,' ', clieTable.apellidos) AS 'CLIENTE',
+        tc.fecha_inicio_contrato AS 'FECHA INICIO',
+        tc.fecha_final_contrato as 'FECHA FIN',
+        tc.frecuencia_cobro as 'TIPO CONTRATO'
+        FROM tbl_motos tm
+        INNER JOIN tbl_contratos tc
+        ON tm.codigo_moto=tc.codigo_moto
+        INNER JOIN tbl_clientes clieTable
+        ON tc.codigo_cliente=clieTable.codigo_cliente
+        WHERE tm.codigo_moto=".$id;
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+    }
+
+    function dataTablaPagosMoto($id){
+
+        $sql="SELECT tbcp.numero_soporte as 'FACTURA',
+        tbcp.fecha_fin_history AS 'PERIODO',
+        tbcp.forma_pago AS 'MEDIO DE PAGO ',
+        tbcp.pago_realizado AS 'VALOR'
+        FROM tbl_contrato_pagos tbcp
+        INNER JOIN tbl_contratos tc
+        ON tbcp.codigo_contrato=tc.codigo_contrato
+        WHERE tc.codigo_moto=".$id;
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+    }
+
+    function dataTablaContrato($id){
+
+        $sql="SELECT c.fecha_inicio_contrato AS 'INICIO', c.fecha_final_contrato AS 'FIN', m.placa AS 'PLACA', m.marca AS 'MARCA',m.linea AS 'LINEA',
+        m.modelo AS 'MODELO', ts.nombre AS 'SEDE'
+        FROM tbl_contratos c
+        INNER JOIN tbl_motos m
+        ON c.codigo_moto=m.codigo_moto
+        INNER JOIN tbl_sedes ts
+        ON m.codigo_sede=ts.codigo_sede
+        WHERE c.codigo_cliente=".$id;
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+
+    }
+
+    function dataTablaPagos($id){
+
+
+        $sql=" SELECT numero_soporte as FACTURA, fecha_fin_history AS PERIODO, forma_pago AS 'MEDIO DE PAGO', pago_realizado AS VALOR
+        FROM tbl_contratos c
+        INNER JOIN tbl_contrato_pagos cp
+        ON c.codigo_contrato=cp.codigo_contrato
+        WHERE c.codigo_cliente=".$id;
+
+
+        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
+        return $data_pagos->fetch_all(MYSQLI_ASSOC);
+
+    }
 
     $mensaje=array();
 
@@ -93,130 +213,6 @@ session_start();
         echo json_encode($completeArr);
 
     }
-
-    function sacarSedes(){
-
-        $sql="SELECT codigo_sede, nombre FROM tbl_sedes";
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-
-    }
-
-    function dataFormContratoCliente($id){
-        
-        $sql="SELECT fecha_proximo_cobro, valor_pagar, frecuencia_cobro, clieTable.uso_moto as 'uso_moto'
-        FROM tbl_contratos tc
-        INNER JOIN tbl_clientes clieTable
-        ON tc.codigo_cliente=clieTable.codigo_cliente 
-        WHERE tc.codigo_cliente=".$id;
-
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-
-    }
-    function dataTablaMantenimiento($id){
-        
-        $sql = "SELECT 
-        m.fecha_mantenimiento AS 'FECHA', 
-        mc.descripcion AS 'CATEGORIA',
-        LEFT(p.razon_social,12) as 'PROVEEDOR',
-        m.concepto as 'CONCEPTO',";
-
-        if($_SESSION['codigo_rol']==1){
-            $sql.="CONCAT(\"<a href='#'  class='editar_categoria' data-id_mantenimiento='\", m.id_mantenimiento,\"' >\",mc.descripcion,\"</a>\") AS 'CATEGORIA',";
-        }else{
-            $sql.="mc.descripcion AS 'CATEGORIA',"; 
-        }
-        
-        $sql.="format(m.valor_mantenimiento,0) AS 'VALOR', 
-        m.observaciones_mantenimiento AS 'OBSERVACIONES',
-        IF(dc.nombre IS NULL, 
-            CONCAT(\"<a href='#' onclick='modal_subir_documento(6,11,\", m.id_mantenimiento,\")'><b>Subir</b></a>\"), 
-            CONCAT(\"<a href='/archivos_cargados/registro_gastos/\", dc.nombre,\"' target='_blank'>Ver</a>\")
-        ) AS 'FACTURA'
-    FROM tbl_mantenimiento_motos m
-    INNER JOIN tbl_mantenimiento_moto_conceptos mc ON mc.codigo_concepto = m.codigo_concepto
-
-    LEFT JOIN tbl_proveedores p ON
-    p.codigo_proveedor = m.codigo_proveedor
-
-    LEFT JOIN tbl_conf_docs dc ON dc.codigo_padre = m.id_mantenimiento AND dc.tipo_documento = 11
-    WHERE codigo_moto= " . $id;
-
-
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-    }
-
-
-    function dataTablaDatosMoto($id){
-
-        $sql="SELECT CONCAT(clieTable.nombres,' ', clieTable.apellidos) AS 'CLIENTE', 
-        tc.fecha_inicio_contrato AS 'FECHA INICIO',
-        tc.fecha_final_contrato as 'FECHA FIN',
-        tc.frecuencia_cobro as 'TIPO CONTRATO'
-        FROM tbl_motos tm 
-        INNER JOIN tbl_contratos tc
-        ON tm.codigo_moto=tc.codigo_moto
-        INNER JOIN tbl_clientes clieTable
-        ON tc.codigo_cliente=clieTable.codigo_cliente
-        WHERE tm.codigo_moto=".$id;
-
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-
-    }
-
-    function dataTablaPagosMoto($id){
-
-        $sql="SELECT tbcp.numero_soporte as 'FACTURA', 
-        tbcp.fecha_fin_history AS 'PERIODO', 
-        tbcp.forma_pago AS 'MEDIO DE PAGO ',
-        tbcp.pago_realizado AS 'VALOR'
-        FROM tbl_contrato_pagos tbcp 
-        INNER JOIN tbl_contratos tc
-        ON tbcp.codigo_contrato=tc.codigo_contrato
-        WHERE tc.codigo_moto=".$id;
-
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-                
-    }
-
-    function dataTablaContrato($id){
-
-        $sql="SELECT c.fecha_inicio_contrato AS 'INICIO', c.fecha_final_contrato AS 'FIN', m.placa AS 'PLACA', m.marca AS 'MARCA',m.linea AS 'LINEA', 
-        m.modelo AS 'MODELO', ts.nombre AS 'SEDE'
-        FROM tbl_contratos c
-        INNER JOIN tbl_motos m
-        ON c.codigo_moto=m.codigo_moto
-        INNER JOIN tbl_sedes ts
-        ON m.codigo_sede=ts.codigo_sede
-        WHERE c.codigo_cliente=".$id;
-
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-
-
-    }
-
-    function dataTablaPagos($id){
-
-
-        $sql=" SELECT numero_soporte as FACTURA, fecha_fin_history AS PERIODO, forma_pago AS 'MEDIO DE PAGO', pago_realizado AS VALOR
-        FROM tbl_contratos c
-        INNER JOIN tbl_contrato_pagos cp
-        ON c.codigo_contrato=cp.codigo_contrato
-        WHERE c.codigo_cliente=".$id;
-
-    
-        $data_pagos=$GLOBALS['conexion']->ejecutar_sql($sql);
-        return $data_pagos->fetch_all(MYSQLI_ASSOC);
-
-    }
-
-
-
 
     if(isset($_POST['tabla'])){
 //echo "4";    
