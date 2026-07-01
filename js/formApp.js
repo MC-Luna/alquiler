@@ -32,7 +32,8 @@ function mostrarModalEditar(e,tipoModulo){
         if(tipoModulo=="ModuloCliente"){
 
             var cod_cliente=e.target.value;
-                document.querySelector('#div_listado_soportes').innerHTML = data.info_soportes;
+                let divSoportesCliente=document.querySelector('#div_listado_soportes');
+                if(divSoportesCliente) divSoportesCliente.innerHTML = data.info_soportes;
 
                 //creo un array con el id de los formularios y de las tablas para limpiarlos siempre que se llame la api.
 
@@ -82,7 +83,8 @@ function mostrarModalEditar(e,tipoModulo){
 
         }else if(tipoModulo=="ModuloMotos"){
 
-            document.querySelector('#div_listado_documentos').innerHTML = data.info_soportes;
+            let divDocsMoto=document.querySelector('#div_listado_documentos');
+            if(divDocsMoto) divDocsMoto.innerHTML = data.info_soportes;
 
                 let arrayFormularios=[
                     'form_datos_motos',
@@ -101,7 +103,7 @@ function mostrarModalEditar(e,tipoModulo){
 
                 //Agrego el boton al formulario de mantenimiento.
                 let save_mantenimiento=document.querySelector('#btn_mantenimiento_motos');
-                save_mantenimiento.addEventListener('click', funcionSave);
+                if(save_mantenimiento) save_mantenimiento.addEventListener('click', funcionSave);
 
                 if(data.cedes.length != 0){
 
@@ -200,7 +202,8 @@ function mostrarModalEditar2(e,tipoModulo){
         if(tipoModulo=="ModuloCliente"){
 
             var cod_cliente=e;
-                listado_consulta("div_listado_soportes","cliente_soportes"," where d.codigo_padre="+ cod_cliente,"",false);
+                let divSoportesCliente2=document.querySelector('#div_listado_soportes');
+                if(divSoportesCliente2) divSoportesCliente2.innerHTML = data.info_soportes;
 
                 //creo un array con el id de los formularios y de las tablas para limpiarlos siempre que se llame la api.
 
@@ -251,7 +254,8 @@ function mostrarModalEditar2(e,tipoModulo){
         }else if(tipoModulo=="ModuloMotos"){
 
                 var cod_moto=e;
-                listado_consulta("div_listado_documentos","moto_soportes"," where d.codigo_padre="+ cod_moto,"",false);
+                let divDocsMoto2=document.querySelector('#div_listado_documentos');
+                if(divDocsMoto2) divDocsMoto2.innerHTML = data.info_soportes;
 
                 listado_consulta2("div_listado_balance_motos","listado_balance_motos",cod_moto,"",true);
 
@@ -272,7 +276,7 @@ function mostrarModalEditar2(e,tipoModulo){
 
                 //Agrego el boton al formulario de mantenimiento.
                 let save_mantenimiento=document.querySelector('#btn_mantenimiento_motos');
-                save_mantenimiento.addEventListener('click', funcionSave);
+                if(save_mantenimiento) save_mantenimiento.addEventListener('click', funcionSave);
 
                 if(data.cedes.length != 0){
 
