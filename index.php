@@ -486,7 +486,7 @@ function eliminar_documento(){
 
   }else{
     //cho "entonces jorge " . $_SESSION["codigo_usuario"];
-    header('Location: /login.html');
+    header('Location: /app/login.html');
   }
 
 ?>

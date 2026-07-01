@@ -7,7 +7,7 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click','.link_pago', function(e){
-		var pass= window.location.origin + "/pago_clientes.php";
+		var pass= window.location.origin + "/app/pago_clientes.php";
 		copyToClipboard(pass);
 		$(this).css("opacity","0.3");
 	});

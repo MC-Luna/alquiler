@@ -13,6 +13,6 @@
 	$consulta = $result->fetch_array(MYSQLI_NUM);
 	$t=$consulta[0];
 	$n=$consulta[1];
-	$web="/pago_clientes.php";
+	$web="/app/pago_clientes.php";
 	header("Location:". $web);
 ?>
