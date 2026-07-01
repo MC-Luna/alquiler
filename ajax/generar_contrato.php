@@ -367,7 +367,7 @@ $frecuencia_texto = match(intval($c['frecuencia_cobro'])){
     <div class="firma">
       <div class="linea"></div>
       <div class="nombre">Representante Legal</div>
-      <div class="rol">Arrendador — <?= htmlspecialchars($c['sede'] ?? 'KAIROS') ?></div>
+      <div class="rol">Arrendador — <?= htmlspecialchars($c['sede'] ?? 'MotoApp') ?></div>
     </div>
   </div>
 

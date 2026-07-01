@@ -1,4 +1,4 @@
-# MotoTrabajo — Documentación del Sistema (KAIROS v1.5)
+# MotoTrabajo — Documentación del Sistema (MotoApp v1.5)
 
 > Aplicación web de gestión integral de alquiler de motos. Permite administrar contratos, clientes, motos, pagos, caja, sedes y usuarios, con control de acceso por roles.
 
