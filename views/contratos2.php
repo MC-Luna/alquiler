@@ -34,7 +34,7 @@
     </style>
 
 <!-- MAGNIFIC POPUP -->
-<link rel="stylesheet" href="/css/magnificPopup.css" />
+<link rel="stylesheet" href="/app/css/magnificPopup.css" />
 <script type="text/javascript" src="/app/js/magnificPopup.js"></script>
 
 
